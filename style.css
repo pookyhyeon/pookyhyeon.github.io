@@ -26,6 +26,11 @@ body{
   line-height:1.65;
 }
 
+img{
+  max-width:100%;
+  height:auto;
+}
+
 a{ color:var(--accent); text-decoration:none; }
 a:hover{ text-decoration:underline; }
 
@@ -424,3 +429,59 @@ a:hover{ text-decoration:underline; }
 }
 .uni.ku{ color: #1aa06b; background: rgba(26,160,107,0.08); }
 .uni.cau{ color: #1e66ff; background: rgba(30,102,255,0.08); }
+
+/* ===== Mobile polish ===== */
+@media (max-width: 720px){
+  body{
+    overflow-x:hidden;
+  }
+  .container{
+    padding:14px;
+  }
+  .topbar-inner{
+    flex-wrap:wrap;
+    align-items:flex-start;
+    gap:8px;
+  }
+  .brand{
+    font-size:20px;
+  }
+  .nav{
+    width:100%;
+    overflow-x:auto;
+    white-space:nowrap;
+    gap:6px;
+    padding:4px 0 8px;
+    margin-top:-4px;
+    -webkit-overflow-scrolling:touch;
+  }
+  .nav a{
+    display:inline-block;
+    padding:10px 12px;
+  }
+  .sidebar{
+    position:relative;
+    top:0;
+  }
+  .sidebar .avatar{
+    max-width:240px;
+    margin:0 auto;
+  }
+  .sidebar,
+  .banner,
+  .section{
+    padding:16px;
+  }
+  .banner h1{
+    font-size:24px;
+  }
+  .banner-hero{
+    min-height:150px;
+  }
+  .lead p{
+    font-size:15px;
+  }
+  .footer{
+    padding:20px 14px 40px;
+  }
+}
