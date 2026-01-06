@@ -5,7 +5,7 @@
   --line:#e5e7eb;
   --card:#f8fafc;
   --accent:#2563eb;
-
+  --site-width: 1100px; /* 네가 PC에서 보던 기준 폭 */
   --shadow:0 10px 26px rgba(16,24,40,.10);
   --radius:18px;
 
@@ -24,6 +24,8 @@ body{
   background:var(--bg);
   color:var(--text);
   line-height:1.65;
+  min-width: var(--site-width);
+  overflow-x: auto;  /* 창이 좁으면 가로 스크롤 */
 }
 
 img{
@@ -81,10 +83,9 @@ a:hover{ text-decoration:underline; }
 }
 
 /* Layout */
-.container{
-  max-width:var(--maxw);
-  margin:0 auto;
-  padding:18px;
+.container, .wrapper, main{
+  width: var(--site-width);
+  margin: 0 auto;
 }
 .grid{
   display:grid;
@@ -294,12 +295,6 @@ a:hover{ text-decoration:underline; }
 }
 
 /* Responsive */
-@media (max-width:900px){
-  :root{ --sidebar: 100%; }
-  .grid{ grid-template-columns:1fr; }
-  .sidebar{ position:relative; top:0; }
-  .banner-hero{ min-height:140px; }
-}
 
 /* ===== Patch: make "Sin wave" bigger ===== */
 .brand{
