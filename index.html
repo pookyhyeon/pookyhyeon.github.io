@@ -738,51 +738,39 @@
   </main>
 
   <!-- Language toggle script (supports text + HTML + title + persist) -->
-  <script>
-    (function () {
-      const toggleBtn = document.getElementById("langToggle");
-      const nodesText = document.querySelectorAll("[data-ko][data-en]");
-      const nodesHtml = document.querySelectorAll("[data-ko-html][data-en-html]");
+<script>
+  (function () {
+    const toggleBtn = document.getElementById("langToggle");
+    const nodesText = document.querySelectorAll("[data-ko][data-en]");
+    const nodesHtml = document.querySelectorAll("[data-ko-html][data-en-html]");
 
-      const TITLES = {
-        ko: "염정현 | 포트폴리오",
-        en: "Jeong Hyeon Yeom | Portfolio"
-      };
+    const TITLES = {
+      ko: "염정현 | 포트폴리오",
+      en: "Jeong Hyeon Yeom | Portfolio"
+    };
 
-      function applyLang(lang) {
-        // html lang attribute
-        document.documentElement.lang = (lang === "ko" ? "ko" : "en");
+    function applyLang(lang) {
+      document.documentElement.lang = (lang === "ko" ? "ko" : "en");
+      document.title = TITLES[lang] || document.title;
 
-        // title
-        document.title = TITLES[lang] || document.title;
+      nodesText.forEach(el => { el.textContent = el.dataset[lang]; });
+      nodesHtml.forEach(el => { el.innerHTML = el.dataset[lang + "Html"]; });
 
-        // plain text nodes
-        nodesText.forEach(el => {
-          el.textContent = el.dataset[lang];
-        });
+      toggleBtn.textContent = (lang === "ko") ? "EN" : "KR";
+      localStorage.setItem("siteLang", lang);
+    }
 
-        // html nodes (contain markup)
-        nodesHtml.forEach(el => {
-          el.innerHTML = el.dataset[lang + "Html"];
-        });
+    // ✅ init: default EN, but restore user preference
+    const saved = localStorage.getItem("siteLang");
+    const current = (saved === "ko" || saved === "en") ? saved : "en";
+    applyLang(current);
 
-        // button label: show what you can switch TO
-        toggleBtn.textContent = (lang === "ko") ? "EN" : "KR";
+    toggleBtn.addEventListener("click", () => {
+      const next = (localStorage.getItem("siteLang") === "en") ? "ko" : "en";
+      applyLang(next);
+    });
+  })();
+</script>
 
-        // persist
-        localStorage.setItem("siteLang", lang);
-      }
-
-      // init: default ko, but restore user preference
-      const saved = localStorage.getItem("siteLang");
-      const current = (saved === "en") ? "en" : "ko";
-      applyLang(current);
-
-      toggleBtn.addEventListener("click", () => {
-        const next = (localStorage.getItem("siteLang") === "en") ? "ko" : "en";
-        applyLang(next);
-      });
-    })();
-  </script>
 </body>
 </html>
