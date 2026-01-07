@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<html lang="En">
 <head>
   <meta charset="utf-8" />
 <meta name="viewport" content="width=1200, initial-scale=1" />
@@ -170,19 +170,132 @@
       </section>
 
       <!-- MAJOR TREE -->
-      <section class="section" id="major-tree">
+<section class="section" id="major-tree">
         <h2 data-ko="전공 트리" data-en="Major Tree">전공 트리</h2>
-        <small data-ko="카테고리별 전공 흐름을 한눈에 볼 수 있습니다."
-               data-en="You can view my academic track and focus areas at a glance.">
-          카테고리별 전공 흐름을 한눈에 볼 수 있습니다.
+        <small data-ko="과목/역량을 묶어서 한눈에 볼 수 있게 정리했습니다."
+               data-en="Grouped courses/skills at a glance.">
+          과목/역량을 묶어서 한눈에 볼 수 있게 정리했습니다.
         </small>
 
-        <div class="card-grid">
-          <div class="item major-tree">
-            <img class="major-tree-img" src="./images/포트폴리오.png" alt="전공 트리 이미지" loading="lazy" />
+        <div class="treeWrap">
+          <div class="treeHead">
+            <h3 class="treeTitle" data-ko="학부 트랙" data-en="Undergraduate Track">학부 트랙</h3>
+            <div class="treeLegend" aria-label="Legend">
+              <span class="tag core">Core</span>
+              <span class="tag elec">Elective</span>
+            </div>
+          </div>
+
+          <div class="treeGrid">
+            <article class="treeCard">
+              <div class="treeCardHead">
+                <span class="treeIcon">⚡</span>
+                <b data-ko="회로/전자" data-en="Circuits & Electronics">회로/전자</b>
+              </div>
+              <div class="chipRow">
+                <span class="chip elec" data-ko="회로이론" data-en="Circuit Theory">회로이론</span>
+                <span class="chip elec" data-ko="전자회로 1,2" data-en="Electronic Circuits 1,2">전자회로 1,2</span>
+                <span class="chip elec" data-ko="신호 및 시스템" data-en="Signals and Systems">신호 및 시스템</span>
+                <span class="chip core" data-ko="전기전자기초설계" data-en="Basic EE Design">전기전자기초설계</span>
+              </div>
+            </article>
+
+            <article class="treeCard">
+              <div class="treeCardHead">
+                <span class="treeIcon">🧠</span>
+                <b data-ko="제어/전력" data-en="Control & Power">제어/전력</b>
+              </div>
+              <div class="chipRow">
+                <span class="chip elec" data-ko="제어공학" data-en="Control Engineering">제어공학</span>
+                <span class="chip elec" data-ko="전력전자" data-en="Power Electronics">전력전자</span>
+                <span class="chip core" data-ko="전기전자 심화 설계" data-en="Advanced EE Design">전기전자 심화 설계</span>
+              </div>
+            </article>
+
+            <article class="treeCard">
+              <div class="treeCardHead">
+                <span class="treeIcon">🧲</span>
+                <b data-ko="전기기기/모터" data-en="Machines & Motors">전기기기/모터</b>
+              </div>
+              <div class="chipRow">
+                <span class="chip elec" data-ko="전자기학 1,2" data-en="Electromagnetics 1,2">전자기학 1,2</span>
+                <span class="chip elec" data-ko="교류/직류전동기기" data-en="AC/DC Electric Machines">교류/직류전동기기</span>
+                <span class="chip elec" data-ko="전동기제어" data-en="Motor Control">전동기제어</span>
+              </div>
+            </article>
+
+            <article class="treeCard">
+              <div class="treeCardHead">
+                <span class="treeIcon">💻</span>
+                <b data-ko="임베디드/컴퓨팅" data-en="Embedded & Computing">임베디드/컴퓨팅</b>
+              </div>
+              <div class="chipRow">
+                <span class="chip elec" data-ko="컴퓨터 구조" data-en="Computer Architecture">컴퓨터 구조</span>
+                <span class="chip elec" data-ko="마이크로프로세서응용" data-en="Microprocessor Applications">마이크로프로세서응용</span>
+                <span class="chip elec" data-ko="임베디드 시스템" data-en="Embedded Systems">임베디드 시스템</span>
+              </div>
+            </article>
+
+            <article class="treeCard">
+              <div class="treeCardHead">
+                <span class="treeIcon">📐</span>
+                <b data-ko="해석/기초수학" data-en="Math & Numerical">해석/기초수학</b>
+              </div>
+              <div class="chipRow">
+                <span class="chip elec" data-ko="수치해석" data-en="Numerical Analysis">수치해석</span>
+                <span class="chip elec" data-ko="반도체 물성/공학" data-en="Semiconductor Physics">반도체 물성/공학</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="treeWrap">
+          <div class="treeHead">
+            <h3 class="treeTitle" data-ko="석사 트랙" data-en="M.S. Track">석사 트랙</h3>
+            <div class="treeLegend" aria-label="Legend">
+              <span class="tag core">Core</span>
+              <span class="tag elec">Elective</span>
+            </div>
+          </div>
+
+          <div class="treeGrid">
+            <article class="treeCard">
+              <div class="treeCardHead">
+                <span class="treeIcon">🌀</span>
+                <b data-ko="에너지" data-en="Energy">에너지</b>
+              </div>
+              <div class="chipRow">
+                <span class="chip elec" data-ko="에너지 산업과 빅데이터간 연계성 분석" data-en="Energy Industry & Big Data Analysis">에너지 산업과 빅데이터간 연계성 분석</span>
+                <span class="chip elec" data-ko="데이터 기반 에너지 혁신: 저장과 변환의 미래" data-en="Data-Driven Energy Innovation">데이터 기반 에너지 혁신: 저장과 변환의 미래</span>
+                <span class="chip elec" data-ko="에너지 자립 효율 분석" data-en="Energy Independence Efficiency Analysis">에너지 자립 효율 분석</span>
+                <span class="chip elec" data-ko="AI 기반 에너지신산업 엔지니어링" data-en="AI-based New Energy Engineering">AI 기반 에너지신산업 엔지니어링</span>
+              </div>
+            </article>
+
+            <article class="treeCard">
+              <div class="treeCardHead">
+                <span class="treeIcon">🧪</span>
+                <b data-ko="멀티피직스" data-en="Multiphysics">멀티피직스</b>
+              </div>
+              <div class="chipRow">
+                <span class="chip core" data-ko="전기/열에너지 모듈관리" data-en="Electric/Thermal Energy Module Mgmt">전기/열에너지 모듈관리</span>
+                <span class="chip elec" data-ko="열/구조 연성" data-en="Thermal-Structural Coupling">열/구조 연성</span>
+              </div>
+            </article>
+
+            <article class="treeCard">
+              <div class="treeCardHead">
+                <span class="treeIcon">🤖</span>
+                <b data-ko="AI/대리모델" data-en="AI & Surrogates">AI/대리모델</b>
+              </div>
+              <div class="chipRow">
+                <span class="chip core" data-ko="전력회로" data-en="Power Circuits">전력회로</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
+
 
       <!-- Research Projects -->
       <section class="section" id="ms-projects">
@@ -329,11 +442,11 @@
 
           <div class="item">
             <div class="item-head">
-              <b data-ko="A Hybrid Deep Learning Framework for High-Precision Torque Prediction of IPMSM: Fusion of Cross-Sectional Geometry and Design Parameters" data-en="A Hybrid Deep Learning Framework for High-Precision Torque Prediction of IPMSM: Fusion of Cross-Sectional Geometry and Design Parameters">A Hybrid Deep Learning Framework for High-Precision Torque Prediction of IPMSM: Fusion of Cross-Sectional Geometry and Design Parameters</b>
+              <b data-ko="A Hybrid CNN-DNN Framework for IPMSM Performance Prediction: Fusing Material-Encoded Cross-Sectional Images with Operating Parameters" data-en="A Hybrid CNN-DNN Framework for IPMSM Performance Prediction: Fusing Material-Encoded Cross-Sectional Images with Operating Parameters">A Hybrid CNN-DNN Framework for IPMSM Performance Prediction: Fusing Material-Encoded Cross-Sectional Images with Operating Parameters</b>
               <span class="date" data-ko="준비중" data-en="In preparation">준비중</span>
             </div>
             <p class="meta">CNN/DNN/MOTOR ANALYSIS</p>
-            <p class="sub" data-ko="한 줄 요약" data-en="One-line summary">한 줄 요약</p>
+            <p class="sub" data-ko="재질 정보를 색상으로 구분한 모터 단면 이미지(CNN)와 운전 조건(DNN)을 결합하여, 기존 수치 기반 모델의 형상 표현 한계를 극복하고 예측 정확도를 획기적으로 높인 하이브리드 딥러닝 모델" data-en="A hybrid deep learning model that fuses color-coded cross-sectional images representing material properties with scalar operating conditions, overcoming the geometric limitations of traditional parameter-based models to achieve superior prediction accuracy.">A hybrid deep learning model that fuses color-coded cross-sectional images representing material properties with scalar operating conditions, overcoming the geometric limitations of traditional parameter-based models to achieve superior prediction accuracy.</p>
           </div>
 
           <div class="item">

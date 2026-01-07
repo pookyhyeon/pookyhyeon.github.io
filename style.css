@@ -521,3 +521,300 @@ a:hover{ text-decoration:underline; }
     }
   }
 }
+
+/* =========================
+   Major Tree (Diagram UI)
+   ========================= */
+
+.majorTreeWrap {
+  margin-top: 18px;
+}
+
+.majorTreeTitle {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 10px 0 10px;
+  font-size: 18px;
+}
+.majorTreeTitle .dot { font-weight: 700; }
+.majorTreeTitle .hint { opacity: .6; font-size: 13px; margin-left: 6px; }
+
+.majorTree {
+  display: grid;
+  grid-template-columns: 1fr 220px; /* 왼쪽 캔버스 + 오른쪽 범례 */
+  gap: 20px;
+  align-items: start;
+}
+
+.majorCanvas {
+  border: 1px solid #111;
+  padding: 22px 22px 14px;
+  position: relative;
+  background: #fff;
+}
+
+.majorCols {
+  display: grid;
+  grid-template-columns: 240px 1px 460px 1px 240px;
+  gap: 22px;
+  align-items: start;
+}
+
+.vline {
+  width: 1px;
+  background: #111;
+  height: 100%;
+  opacity: .8;
+}
+
+.yearCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+/* 아래 연도 라벨(2학년/3학년/4학년, M1/M2) */
+.yearCol::after {
+  content: attr(data-year);
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 14px;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+
+/* 3학년 내부 2열 배치 */
+.yearCol-3 .twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 22px;
+  margin-top: 2px;
+}
+
+/* 과목 박스 */
+.course {
+  border: 1px solid #0c1f2c;
+  padding: 14px 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  border-radius: 0;
+  font-size: 15px;
+  background: #0a2b4f; /* 기본: 선택(파란) */
+  color: #fff;
+  user-select: none;
+}
+
+/* 전공필수/선택 스타일 */
+.course.required {
+  background: #fff;
+  color: #111;
+  border-color: #111;
+}
+
+.course.elective {
+  background: #0a2b4f;
+  color: #fff;
+  border-color: #061a2f;
+}
+
+/* “하얀 박스(필수)” 느낌 더 주고 싶으면 outline 클래스 사용 */
+.course.outline {
+  background: #fff;
+  color: #111;
+  border: 1px solid #111;
+}
+
+/* 빈칸 정렬용 */
+.course.ghost {
+  visibility: hidden;
+  padding: 0;
+  border: 0;
+}
+
+/* 오른쪽 범례 */
+.majorLegend {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 26px;
+}
+
+.legendItem {
+  border: 1px solid #111;
+  padding: 14px 16px;
+  text-align: center;
+  font-weight: 800;
+  background: #fff;
+}
+
+.legendItem.elective {
+  background: #0a2b4f;
+  color: #fff;
+  border-color: #061a2f;
+}
+
+/* 아래 타임라인(화살표) */
+.majorTimeline {
+  margin-top: 18px;
+  position: relative;
+  height: 26px;
+}
+
+.majorTimeline .line {
+  position: absolute;
+  left: 10px;
+  right: 28px;
+  top: 12px;
+  height: 3px;
+  background: #111;
+}
+
+.majorTimeline .arrow {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  width: 0;
+  height: 0;
+  border-left: 14px solid #111;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+/* ✅ 모바일에서도 PC처럼 “가로 레이아웃 유지 + 축소” 원하면:
+   HTML meta viewport를 width=1200 으로 했을 때 가장 자연스러움.
+   (추가로, 모바일에서 글씨/간격만 살짝 줄이고 싶으면 아래 옵션) */
+@media (max-width: 768px) {
+  .majorTree { grid-template-columns: 1fr 180px; }
+  .majorCols { grid-template-columns: 210px 1px 420px 1px 210px; }
+  .course { font-size: 14px; padding: 12px 12px; }
+  .yearCol::after { font-size: 20px; }
+}
+
+/* =========================
+   Major Tree (Responsive Box)
+   ========================= */
+
+.treeWrap {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.02);
+}
+
+.treeHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.treeTitle {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+}
+
+.treeLegend {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: rgba(255,255,255,0.04);
+}
+
+.tag.core {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 0, 0, 0.08);
+}
+
+.tag.elec {
+  border-color: rgba(0, 160, 255, 0.35);
+  background: rgba(0, 160, 255, 0.10);
+}
+
+.treeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* 1열로 떨어질 때도 예쁘게 */
+@media (max-width: 900px) {
+  .treeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.treeCard {
+  border: 1px solid rgb(103, 26, 245);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.18);
+  padding: 14px;
+  min-width: 0;              /* ✅ overflow 방지 핵심 */
+}
+
+.treeCardHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.treeIcon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  flex: 0 0 auto;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;   /* ✅ 긴 텍스트도 안 넘침 */
+}
+
+.chip.core {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 0, 0, 0.08);
+}
+
+.chip.elec {
+  background: rgba(0, 128, 202, 0.1);
+  border-color: rgba(0, 156, 247, 0.979);
+}
