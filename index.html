@@ -1,28 +1,24 @@
 <!doctype html>
-<html lang="En">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-<meta name="viewport" content="width=1200, initial-scale=1" />
+  <meta name="viewport" content="width=1200, initial-scale=1" />
 
-
-
-  <!-- Mobile scale: keep desktop layout, scale down on small screens -->
-
-  <title>염정현 | 포트폴리오</title>
+  <title>Jeong Hyeon Yeom | Portfolio</title>
   <meta name="description" content="Personal portfolio site" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <a class="skip-link" href="#content" data-ko="본문으로 바로가기" data-en="Skip to content">본문으로 바로가기</a>
+  <a class="skip-link" href="#content" data-ko="본문으로 바로가기" data-en="Skip to content">Skip to content</a>
 
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="./index.html">Sine wave</a>
 
       <nav class="nav" aria-label="Primary">
-        <a href="#home" data-ko="Home" data-en="Home">home</a>
-        <a href="#education" data-ko="Education" data-en="Education">education</a>
+        <a href="#home" data-ko="Home" data-en="Home">Home</a>
+        <a href="#education" data-ko="Education" data-en="Education">Education</a>
         <a href="#major-tree" data-ko="Major Tree" data-en="Major Tree">Major Tree</a>
         <a href="#ms-projects" data-ko="Research Projects" data-en="Research Projects">Research Projects</a>
         <a href="#manuscripts" data-ko="Manuscripts" data-en="Manuscripts">Manuscripts</a>
@@ -34,19 +30,17 @@
         <a href="#more" data-ko="More" data-en="More">More</a>
       </nav>
 
-      <!-- Language toggle -->
-      <button id="langToggle" class="lang-btn" type="button" aria-label="Toggle language">EN</button>
+      <button id="langToggle" class="lang-btn" type="button" aria-label="Toggle language">KR</button>
     </div>
   </header>
 
   <main class="container grid" id="content">
-    <!-- Sidebar -->
     <aside class="sidebar" aria-label="Profile sidebar">
       <div class="avatar" aria-label="Profile image">
-        <img src="./images/about.jpg" alt="염정현 프로필 사진" />
+        <img src="./images/about.jpg" alt="Jeong Hyeon Yeom Profile" />
       </div>
 
-      <h2 class="side-title" data-ko="염정현" data-en="Jeong Hyeon Yeom">염정현</h2>
+      <h2 class="side-title" data-ko="염정현" data-en="Jeong Hyeon Yeom">Jeong Hyeon Yeom</h2>
       <p class="side-sub" data-ko="M.S. Student · Electric Motor Design" data-en="M.S. Student · Electric Motor Design">
         M.S. Student · Electric Motor Design
       </p>
@@ -73,54 +67,50 @@
         <span class="pill">Research</span>
       </div>
 
-      <!-- Use data-*-html because it contains inline markup -->
       <div class="quote"
         data-ko-html='행운은 <b style="color:var(--accent)">결단과 실행력</b>을 가진 용기 있는 자를 선호한다.'
         data-en-html='Luck favors the brave who have <b style="color:var(--accent)">the courage to decide and act</b>.'>
-        행운은 <b style="color:var(--accent)">결단과 실행력</b>을 가진 용기 있는 자를 선호한다.
+        Luck favors the brave who have <b style="color:var(--accent)">the courage to decide and act</b>.
       </div>
     </aside>
 
-    <!-- Main -->
     <section class="main">
-      <!-- HOME / Banner -->
       <section class="banner" id="home">
         <div class="banner-hero" style="background-image:url('./images/ocean.jpg');"></div>
         <div class="banner-body">
-          <h1 data-ko="염정현" data-en="Jeong Hyeon Yeom">염정현</h1>
+          <h1 data-ko="염정현" data-en="Jeong Hyeon Yeom">Jeong Hyeon Yeom</h1>
 
           <div class="lead">
             <p data-ko="중앙대학교에서 전동기 설계를 연구하는 석사과정 학생입니다 ⚡️."
                data-en="I am an M.S. student at Chung-Ang University, specializing in electric machine design ⚡️.">
-              중앙대학교에서 전동기 설계를 연구하는 석사과정 학생입니다 ⚡️.
+              I am an M.S. student at Chung-Ang University, specializing in electric machine design ⚡️.
             </p>
 
             <p data-ko="건국대학교 전기전자공학부에서 학사 학위를 취득했습니다."
                data-en="I received my B.S. degree in Electrical & Electronic Engineering from Konkuk University.">
-              건국대학교 전기전자공학부에서 학사 학위를 취득했습니다.
+              I received my B.S. degree in Electrical & Electronic Engineering from Konkuk University.
             </p>
 
             <p data-ko="저는 전동기 설계, 멀티피직스 시뮬레이션, 그리고 설계 탐색을 위한 데이터 기반 워크플로우에 관심이 있습니다. 특히 대규모 DOE 및 최적화를 빠르게 수행하기 위한 고속·고신뢰 대리모델 구축에 집중하고 있습니다."
                data-en="My research focuses on e-motor design, multi-physics simulation, and data-driven workflows for design exploration. I am particularly interested in building fast and reliable surrogate models to accelerate large-scale DOE and optimization.">
-              저는 전동기 설계, 멀티피직스 시뮬레이션, 그리고 설계 탐색을 위한 데이터 기반 워크플로우에 관심이 있습니다. 특히 대규모 DOE 및 최적화를 빠르게 수행하기 위한 고속·고신뢰 대리모델 구축에 집중하고 있습니다.
+              My research focuses on e-motor design, multi-physics simulation, and data-driven workflows for design exploration. I am particularly interested in building fast and reliable surrogate models to accelerate large-scale DOE and optimization.
             </p>
 
             <p data-ko="현재는 고속 구동 모터를 위한 AI 기반 성능 예측을 개발하고 있습니다. 궁극적으로는 미래 세대에 도움이 되는 기술 개발에 기여하고 싶습니다."
                data-en="Currently, I am developing AI-assisted performance prediction for high-speed traction motors. Ultimately, I aim to contribute to technology development that benefits future generations.">
-              현재는 고속 구동 모터를 위한 AI 기반 성능 예측을 개발하고 있습니다. 궁극적으로는 미래 세대에 도움이 되는 기술 개발에 기여하고 싶습니다.
+              Currently, I am developing AI-assisted performance prediction for high-speed traction motors. Ultimately, I aim to contribute to technology development that benefits future generations.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- EDUCATION -->
       <section class="section" id="education">
-        <h2 data-ko="🎓 학력" data-en="🎓 Education">🎓 학력</h2>
+        <h2 data-ko="🎓 학력" data-en="🎓 Education">🎓 Education</h2>
 
         <div class="card-grid">
           <div class="item">
             <div class="item-head">
-              <b data-ko="학사 · 전기전자공학" data-en="B.S. Electrical & Electronic Engineering">학사 · 전기전자공학</b>
+              <b data-ko="학사 · 전기전자공학" data-en="B.S. Electrical & Electronic Engineering">B.S. Electrical & Electronic Engineering</b>
               <span class="date">2019–2025</span>
             </div>
 
@@ -132,16 +122,27 @@
                 <p class="sub"
                    data-ko="학부 시절 임베디드 시스템, 전력전자, 전기기기, 제어공학 등을 학습했습니다. 졸업논문으로는 ‘전기자동차 충전시스템 최적화’ 주제로 연구를 수행했습니다."
                    data-en="Studied embedded systems, power electronics, electric machines, and control engineering. For my graduation thesis, I worked on “Optimization of EV Charging Systems.”">
-                  학부 시절 임베디드 시스템, 전력전자, 전기기기, 제어공학 등을 학습했습니다. <br> 졸업논문으로는 ‘전기자동차 충전시스템 최적화’ 주제로 연구를 수행했습니다.
+                  Studied embedded systems, power electronics, electric machines, and control engineering. For my graduation thesis, I worked on “Optimization of EV Charging Systems.”
                 </p>
 
                 <ul>
-                  <li data-ko="(장학) KU 학생 성장 장학" data-en="(Scholarship) KU Student Growth Scholarship">(장학) KU 학생 성장 장학</li>
-                  <li data-ko="(장학) 쿨하우스 장학" data-en="(Scholarship) Cool House Scholarship">(장학) 쿨하우스 장학</li>
-                  <li data-ko="(장학) 서울시 장학" data-en="(Scholarship) Seoul Scholarship">(장학) 서울시 장학</li>
+                  <li data-ko="(장학) KU 학생 성장 장학" data-en="(Scholarship) KU Student Growth Scholarship">(Scholarship) KU Student Growth Scholarship</li>
+                  <li data-ko="(장학) 쿨하우스 장학" data-en="(Scholarship) Cool House Scholarship">(Scholarship) Cool House Scholarship</li>
+                  <li data-ko="(장학) 서울시 장학" data-en="(Scholarship) Seoul Scholarship">(Scholarship) Seoul Scholarship</li>
+                  
+                  <li data-ko="(수상) 전기안전 정책 경진대회 최우수상 (장관상)" data-en="(Award) Grand Prize, Electrical Safety Policy Competition (Minister Award)">
+                      (Award) Grand Prize, Electrical Safety Policy Competition (Minister Award)
+                  </li>
+                  <li data-ko="(수상) 제 15회 창의설계 경진대회 우수상 (총장상)" data-en="(Award) Excellence Prize, 15th Creative Design Competition (President Award)">
+                      (Award) Excellence Prize, 15th Creative Design Competition (President Award)
+                  </li>
+                  <li data-ko="(수상) 2024 진로 포트폴리오 대회 우수상" data-en="(Award) Excellence Prize, 2024 Career Portfolio Competition">
+                      (Award) Excellence Prize, 2024 Career Portfolio Competition
+                  </li>
+                  
                   <li data-ko="(동아리) 전기전자공학 학술동아리 DECA / 기계동아리 돌밭"
                       data-en="(Clubs) DECA (EE academic club) / Dolbat (mechanical club)">
-                    (동아리) 전기전자공학 학술동아리 DECA / 기계동아리 돌밭
+                    (Clubs) DECA (EE academic club) / Dolbat (mechanical club)
                   </li>
                 </ul>
               </div>
@@ -150,8 +151,8 @@
 
           <div class="item">
             <div class="item-head">
-              <b data-ko="석사 · 지능형 에너지 산업" data-en="M.S. Intelligent Energy Industry">석사 · 지능형 에너지 산업</b>
-              <span class="date" data-ko="2025–현재" data-en="2025–Present">2025–현재</span>
+              <b data-ko="석사 · 지능형 에너지 산업" data-en="M.S. Intelligent Energy Industry">M.S. Intelligent Energy Industry</b>
+              <span class="date" data-ko="2025–현재" data-en="2025–Present">2025–Present</span>
             </div>
 
             <div class="media-row">
@@ -161,7 +162,7 @@
                 <p class="sub"
                    data-ko="지능형 에너지 산업 분야를 연구 중이며, 전동기 설계를 주제로 연구를 진행하고 있습니다."
                    data-en="Conducting research in the intelligent energy industry domain, focusing on electric motor design.">
-                  지능형 에너지 산업 분야를 연구 중이며, 전동기 설계를 주제로 연구를 진행하고 있습니다.
+                  Conducting research in the intelligent energy industry domain, focusing on electric motor design.
                 </p>
               </div>
             </div>
@@ -169,17 +170,16 @@
         </div>
       </section>
 
-      <!-- MAJOR TREE -->
-<section class="section" id="major-tree">
-        <h2 data-ko="전공 트리" data-en="Major Tree">전공 트리</h2>
+      <section class="section" id="major-tree">
+        <h2 data-ko="전공 트리" data-en="Major Tree">Major Tree</h2>
         <small data-ko="과목/역량을 묶어서 한눈에 볼 수 있게 정리했습니다."
                data-en="Grouped courses/skills at a glance.">
-          과목/역량을 묶어서 한눈에 볼 수 있게 정리했습니다.
+          Grouped courses/skills at a glance.
         </small>
 
         <div class="treeWrap">
           <div class="treeHead">
-            <h3 class="treeTitle" data-ko="학부 트랙" data-en="Undergraduate Track">학부 트랙</h3>
+            <h3 class="treeTitle" data-ko="학부 트랙" data-en="Undergraduate Track">Undergraduate Track</h3>
             <div class="treeLegend" aria-label="Legend">
               <span class="tag core">Core</span>
               <span class="tag elec">Elective</span>
@@ -190,60 +190,60 @@
             <article class="treeCard">
               <div class="treeCardHead">
                 <span class="treeIcon">⚡</span>
-                <b data-ko="회로/전자" data-en="Circuits & Electronics">회로/전자</b>
+                <b data-ko="회로/전자" data-en="Circuits & Electronics">Circuits & Electronics</b>
               </div>
               <div class="chipRow">
-                <span class="chip elec" data-ko="회로이론" data-en="Circuit Theory">회로이론</span>
-                <span class="chip elec" data-ko="전자회로 1,2" data-en="Electronic Circuits 1,2">전자회로 1,2</span>
-                <span class="chip elec" data-ko="신호 및 시스템" data-en="Signals and Systems">신호 및 시스템</span>
-                <span class="chip core" data-ko="전기전자기초설계" data-en="Basic EE Design">전기전자기초설계</span>
+                <span class="chip elec" data-ko="회로이론" data-en="Circuit Theory">Circuit Theory</span>
+                <span class="chip elec" data-ko="전자회로 1,2" data-en="Electronic Circuits 1,2">Electronic Circuits 1,2</span>
+                <span class="chip elec" data-ko="신호 및 시스템" data-en="Signals and Systems">Signals and Systems</span>
+                <span class="chip core" data-ko="전기전자기초설계" data-en="Basic EE Design">Basic EE Design</span>
               </div>
             </article>
 
             <article class="treeCard">
               <div class="treeCardHead">
                 <span class="treeIcon">🧠</span>
-                <b data-ko="제어/전력" data-en="Control & Power">제어/전력</b>
+                <b data-ko="제어/전력" data-en="Control & Power">Control & Power</b>
               </div>
               <div class="chipRow">
-                <span class="chip elec" data-ko="제어공학" data-en="Control Engineering">제어공학</span>
-                <span class="chip elec" data-ko="전력전자" data-en="Power Electronics">전력전자</span>
-                <span class="chip core" data-ko="전기전자 심화 설계" data-en="Advanced EE Design">전기전자 심화 설계</span>
+                <span class="chip elec" data-ko="제어공학" data-en="Control Engineering">Control Engineering</span>
+                <span class="chip elec" data-ko="전력전자" data-en="Power Electronics">Power Electronics</span>
+                <span class="chip core" data-ko="전기전자 심화 설계" data-en="Advanced EE Design">Advanced EE Design</span>
               </div>
             </article>
 
             <article class="treeCard">
               <div class="treeCardHead">
                 <span class="treeIcon">🧲</span>
-                <b data-ko="전기기기/모터" data-en="Machines & Motors">전기기기/모터</b>
+                <b data-ko="전기기기/모터" data-en="Machines & Motors">Machines & Motors</b>
               </div>
               <div class="chipRow">
-                <span class="chip elec" data-ko="전자기학 1,2" data-en="Electromagnetics 1,2">전자기학 1,2</span>
-                <span class="chip elec" data-ko="교류/직류전동기기" data-en="AC/DC Electric Machines">교류/직류전동기기</span>
-                <span class="chip elec" data-ko="전동기제어" data-en="Motor Control">전동기제어</span>
+                <span class="chip elec" data-ko="전자기학 1,2" data-en="Electromagnetics 1,2">Electromagnetics 1,2</span>
+                <span class="chip elec" data-ko="교류/직류전동기기" data-en="AC/DC Electric Machines">AC/DC Electric Machines</span>
+                <span class="chip elec" data-ko="전동기제어" data-en="Motor Control">Motor Control</span>
               </div>
             </article>
 
             <article class="treeCard">
               <div class="treeCardHead">
                 <span class="treeIcon">💻</span>
-                <b data-ko="임베디드/컴퓨팅" data-en="Embedded & Computing">임베디드/컴퓨팅</b>
+                <b data-ko="임베디드/컴퓨팅" data-en="Embedded & Computing">Embedded & Computing</b>
               </div>
               <div class="chipRow">
-                <span class="chip elec" data-ko="컴퓨터 구조" data-en="Computer Architecture">컴퓨터 구조</span>
-                <span class="chip elec" data-ko="마이크로프로세서응용" data-en="Microprocessor Applications">마이크로프로세서응용</span>
-                <span class="chip elec" data-ko="임베디드 시스템" data-en="Embedded Systems">임베디드 시스템</span>
+                <span class="chip elec" data-ko="컴퓨터 구조" data-en="Computer Architecture">Computer Architecture</span>
+                <span class="chip elec" data-ko="마이크로프로세서응용" data-en="Microprocessor Applications">Microprocessor Applications</span>
+                <span class="chip elec" data-ko="임베디드 시스템" data-en="Embedded Systems">Embedded Systems</span>
               </div>
             </article>
 
             <article class="treeCard">
               <div class="treeCardHead">
                 <span class="treeIcon">📐</span>
-                <b data-ko="해석/기초수학" data-en="Math & Numerical">해석/기초수학</b>
+                <b data-ko="해석/기초수학" data-en="Math & Numerical">Math & Numerical</b>
               </div>
               <div class="chipRow">
-                <span class="chip elec" data-ko="수치해석" data-en="Numerical Analysis">수치해석</span>
-                <span class="chip elec" data-ko="반도체 물성/공학" data-en="Semiconductor Physics">반도체 물성/공학</span>
+                <span class="chip elec" data-ko="수치해석" data-en="Numerical Analysis">Numerical Analysis</span>
+                <span class="chip elec" data-ko="반도체 물성/공학" data-en="Semiconductor Physics">Semiconductor Physics</span>
               </div>
             </article>
           </div>
@@ -251,7 +251,7 @@
 
         <div class="treeWrap">
           <div class="treeHead">
-            <h3 class="treeTitle" data-ko="석사 트랙" data-en="M.S. Track">석사 트랙</h3>
+            <h3 class="treeTitle" data-ko="석사 트랙" data-en="M.S. Track">M.S. Track</h3>
             <div class="treeLegend" aria-label="Legend">
               <span class="tag core">Core</span>
               <span class="tag elec">Elective</span>
@@ -262,34 +262,34 @@
             <article class="treeCard">
               <div class="treeCardHead">
                 <span class="treeIcon">🌀</span>
-                <b data-ko="에너지" data-en="Energy">에너지</b>
+                <b data-ko="에너지" data-en="Energy">Energy</b>
               </div>
               <div class="chipRow">
-                <span class="chip elec" data-ko="에너지 산업과 빅데이터간 연계성 분석" data-en="Energy Industry & Big Data Analysis">에너지 산업과 빅데이터간 연계성 분석</span>
-                <span class="chip elec" data-ko="데이터 기반 에너지 혁신: 저장과 변환의 미래" data-en="Data-Driven Energy Innovation">데이터 기반 에너지 혁신: 저장과 변환의 미래</span>
-                <span class="chip elec" data-ko="에너지 자립 효율 분석" data-en="Energy Independence Efficiency Analysis">에너지 자립 효율 분석</span>
-                <span class="chip elec" data-ko="AI 기반 에너지신산업 엔지니어링" data-en="AI-based New Energy Engineering">AI 기반 에너지신산업 엔지니어링</span>
+                <span class="chip elec" data-ko="에너지 산업과 빅데이터간 연계성 분석" data-en="Energy Industry & Big Data Analysis">Energy Industry & Big Data Analysis</span>
+                <span class="chip elec" data-ko="데이터 기반 에너지 혁신: 저장과 변환의 미래" data-en="Data-Driven Energy Innovation">Data-Driven Energy Innovation</span>
+                <span class="chip elec" data-ko="에너지 자립 효율 분석" data-en="Energy Independence Efficiency Analysis">Energy Independence Efficiency Analysis</span>
+                <span class="chip elec" data-ko="AI 기반 에너지신산업 엔지니어링" data-en="AI-based New Energy Engineering">AI-based New Energy Engineering</span>
               </div>
             </article>
 
             <article class="treeCard">
               <div class="treeCardHead">
                 <span class="treeIcon">🧪</span>
-                <b data-ko="멀티피직스" data-en="Multiphysics">멀티피직스</b>
+                <b data-ko="멀티피직스" data-en="Multiphysics">Multiphysics</b>
               </div>
               <div class="chipRow">
-                <span class="chip core" data-ko="전기/열에너지 모듈관리" data-en="Electric/Thermal Energy Module Mgmt">전기/열에너지 모듈관리</span>
-                <span class="chip elec" data-ko="열/구조 연성" data-en="Thermal-Structural Coupling">열/구조 연성</span>
+                <span class="chip core" data-ko="전기/열에너지 모듈관리" data-en="Electric/Thermal Energy Module Mgmt">Electric/Thermal Energy Module Mgmt</span>
+                <span class="chip elec" data-ko="열/구조 연성" data-en="Thermal-Structural Coupling">Thermal-Structural Coupling</span>
               </div>
             </article>
 
             <article class="treeCard">
               <div class="treeCardHead">
                 <span class="treeIcon">🤖</span>
-                <b data-ko="AI/대리모델" data-en="AI & Surrogates">AI/대리모델</b>
+                <b data-ko="AI/대리모델" data-en="AI & Surrogates">AI & Surrogates</b>
               </div>
               <div class="chipRow">
-                <span class="chip core" data-ko="전력회로" data-en="Power Circuits">전력회로</span>
+                <span class="chip core" data-ko="전력회로" data-en="Power Circuits">Power Circuits</span>
               </div>
             </article>
           </div>
@@ -297,12 +297,11 @@
       </section>
 
 
-      <!-- Research Projects -->
       <section class="section" id="ms-projects">
-        <h2 data-ko="🧪 연구 과제 (석사)" data-en="🧪 Research Projects (M.S.)">🧪 연구 과제 (석사)</h2>
+        <h2 data-ko="🧪 연구 과제 (석사)" data-en="🧪 Research Projects (M.S.)">🧪 Research Projects (M.S.)</h2>
         <small data-ko="※ 과제명은 공개 가능한 범위로 정리"
                data-en="※ Project titles are listed within shareable/public range.">
-          ※ 과제명은 공개 가능한 범위로 정리
+          ※ Project titles are listed within shareable/public range.
         </small>
 
         <div class="card-grid">
@@ -312,24 +311,24 @@
                 <span class="org posco">POSCO</span>
                 <span data-ko=" · 타발 응력 해소 정도에 따른 구동모터 효율 예측"
                       data-en=" · Efficiency Prediction under Stamping-Stress Relaxation Levels">
-                  · 타발 응력 해소 정도에 따른 구동모터 효율 예측
+                  · Efficiency Prediction under Stamping-Stress Relaxation Levels
                 </span>
               </b>
               <span class="date">2025</span>
             </div>
 
             <p class="meta" data-ko="키워드: 제조 응력 · 효율 · 예측" data-en="Keywords: manufacturing stress · efficiency · prediction">
-              키워드: 제조 응력 · 효율 · 예측
+              Keywords: manufacturing stress · efficiency · prediction
             </p>
 
             <ul>
               <li data-ko="목표: 코어 타발/응력 조건 변화가 손실·효율에 미치는 영향 정량화"
                   data-en="Goal: Quantify how punching/stress conditions affect losses and efficiency">
-                목표: 코어 타발/응력 조건 변화가 손실·효율에 미치는 영향 정량화
+                Goal: Quantify how punching/stress conditions affect losses and efficiency
               </li>
               <li data-ko="역할: 데이터 정리/후처리 자동화, 성능 지표 분석 및 예측 모델 검토"
                   data-en="My role: Data organization & post-processing automation, KPI analysis, model review">
-                역할: 데이터 정리/후처리 자동화, 성능 지표 분석 및 예측 모델 검토
+                My role: Data organization & post-processing automation, KPI analysis, model review
               </li>
             </ul>
           </div>
@@ -340,7 +339,7 @@
                 <span class="org lg">LG</span>
                 <span data-ko=" · 700RT 대형 칠러용 Sleeve-free IPM 모터 토폴로지 발굴"
                       data-en=" · Topology Exploration for 700RT Large Chiller Sleeve-free IPM Motor">
-                  · 700RT 대형 칠러용 Sleeve-free IPM 모터 토폴로지 발굴
+                  · Topology Exploration for 700RT Large Chiller Sleeve-free IPM Motor
                 </span>
               </b>
               <span class="date">2025–</span>
@@ -348,17 +347,17 @@
 
             <p class="meta" data-ko="키워드: 토폴로지 탐색 · 강건성 · 고출력"
                data-en="Keywords: topology exploration · robustness · high power">
-              키워드: 토폴로지 탐색 · 강건성 · 고출력
+              Keywords: topology exploration · robustness · high power
             </p>
 
             <ul>
               <li data-ko="목표: 대형 칠러 구동을 위한 고신뢰 토폴로지 후보군 발굴"
                   data-en="Goal: Identify high-reliability topology candidates for large chiller drive">
-                목표: 대형 칠러 구동을 위한 고신뢰 토폴로지 후보군 발굴
+                Goal: Identify high-reliability topology candidates for large chiller drive
               </li>
               <li data-ko="역할: 설계 변수 정의, 성능 비교(토크/손실/제약) 및 후보 선정 지원"
                   data-en="My role: Define design variables, compare performance (torque/loss/constraints), shortlist candidates">
-                역할: 설계 변수 정의, 성능 비교(토크/손실/제약) 및 후보 선정 지원
+                My role: Define design variables, compare performance (torque/loss/constraints), shortlist candidates
               </li>
             </ul>
           </div>
@@ -369,24 +368,24 @@
                 <span class="org posco">POSCO</span>
                 <span data-ko=" · 제조 응력 조건에서 모터 성능 측정 및 예측 기술 개발"
                       data-en=" · Performance Measurement & Prediction under Manufacturing Stress Conditions">
-                  · 제조 응력 조건에서 모터 성능 측정 및 예측 기술 개발
+                  · Performance Measurement & Prediction under Manufacturing Stress Conditions
                 </span>
               </b>
               <span class="date">2025–</span>
             </div>
 
             <p class="meta" data-ko="키워드: 측정 · 보정 · 예측" data-en="Keywords: measurement · calibration · prediction">
-              키워드: 측정 · 보정 · 예측
+              Keywords: measurement · calibration · prediction
             </p>
 
             <ul>
               <li data-ko="목표: 공정 조건(응력) 기반 성능 변화 측정/모델링"
                   data-en="Goal: Measure/model performance variation based on process stress conditions">
-                목표: 공정 조건(응력) 기반 성능 변화 측정/모델링
+                Goal: Measure/model performance variation based on process stress conditions
               </li>
               <li data-ko="역할: 측정/해석 데이터 비교, 예측 정확도 향상 방향 정리"
                   data-en="My role: Compare measured vs. simulated data; summarize directions to improve prediction accuracy">
-                역할: 측정/해석 데이터 비교, 예측 정확도 향상 방향 정리
+                My role: Compare measured vs. simulated data; summarize directions to improve prediction accuracy
               </li>
             </ul>
           </div>
@@ -397,7 +396,7 @@
                 <span class="org lg">LG</span>
                 <span data-ko=" · 다상(Duplex 3상) 모터 토폴로지 발굴 (칠러 무정지 운전 신뢰성)"
                       data-en=" · Multiphase (Duplex 3-Phase) Motor Topology Exploration for Fault-Tolerant Chillers">
-                  · 다상(Duplex 3상) 모터 토폴로지 발굴 (칠러 무정지 운전 신뢰성)
+                  · Multiphase (Duplex 3-Phase) Motor Topology Exploration for Fault-Tolerant Chillers
                 </span>
               </b>
               <span class="date">2026–</span>
@@ -405,36 +404,35 @@
 
             <p class="meta" data-ko="키워드: 고장 허용 · 신뢰성 · 다상"
                data-en="Keywords: fault tolerance · reliability · multiphase">
-              키워드: 고장 허용 · 신뢰성 · 다상
+              Keywords: fault tolerance · reliability · multiphase
             </p>
 
             <ul>
               <li data-ko="목표: 고장 상황에서도 운전 지속 가능한 구조/결선 후보 탐색"
                   data-en="Goal: Explore topologies and winding options that keep running under faults">
-                목표: 고장 상황에서도 운전 지속 가능한 구조/결선 후보 탐색
+                Goal: Explore topologies and winding options that keep running under faults
               </li>
               <li data-ko="역할: 성능/고장 강건성 지표 정리 및 비교 기준 수립"
                   data-en="My role: Define robustness KPIs and comparison criteria for topology screening">
-                역할: 성능/고장 강건성 지표 정리 및 비교 기준 수립
+                My role: Define robustness KPIs and comparison criteria for topology screening
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Manuscripts -->
       <section class="section" id="manuscripts">
-        <h2 data-ko="📝 논문 (준비중)" data-en="📝 Manuscripts in Preparation">📝 논문 (준비중)</h2>
+        <h2 data-ko="📝 논문 (준비중)" data-en="📝 Manuscripts in Preparation">📝 Manuscripts in Preparation</h2>
         <small data-ko="※ 제목/공저자/저널은 확정되는 대로 업데이트 예정"
                data-en="※ Titles/coauthors/journals will be updated as soon as confirmed.">
-          ※ 제목/공저자/저널은 확정되는 대로 업데이트 예정
+          ※ Titles/coauthors/journals will be updated as soon as confirmed.
         </small>
 
         <div class="card-grid">
           <div class="item">
             <div class="item-head">
               <b data-ko="2-Stage Deep Learning Surrogate Framework Combining Classification and Regression for Optimal Design of Electric Machines" data-en="2-Stage Deep Learning Surrogate Framework Combining Classification and Regression for Optimal Design of Electric Machines">2-Stage Deep Learning Surrogate Framework Combining Classification and Regression for Optimal Design of Electric Machines</b>
-              <span class="date" data-ko="준비중" data-en="In preparation">준비중</span>
+              <span class="date" data-ko="준비중" data-en="In preparation">In preparation</span>
             </div>
             <p class="meta">DNN/CLASSIFICATION/MOTOR ANALYSIS</p>
             <p class="sub" data-ko="물리적 제약 조건을 판별하는 분류 모델과 성능 예측 회귀 모델을 결합하여, FEM 대비 해석 시간을 획기적으로 단축한 전기모터(IPMSM) 최적 설계용 2-Stage 딥러닝 프레임워크 개발" data-en="Developed a 2-Stage Deep Learning Surrogate Framework combining classification for geometric feasibility and regression for performance prediction to enable rapid and robust optimal design of IPMSM">Developed a 2-Stage Deep Learning Surrogate Framework combining classification for geometric feasibility and regression for performance prediction to enable rapid and robust optimal design of IPMSM</p>
@@ -443,7 +441,7 @@
           <div class="item">
             <div class="item-head">
               <b data-ko="A Hybrid CNN-DNN Framework for IPMSM Performance Prediction: Fusing Material-Encoded Cross-Sectional Images with Operating Parameters" data-en="A Hybrid CNN-DNN Framework for IPMSM Performance Prediction: Fusing Material-Encoded Cross-Sectional Images with Operating Parameters">A Hybrid CNN-DNN Framework for IPMSM Performance Prediction: Fusing Material-Encoded Cross-Sectional Images with Operating Parameters</b>
-              <span class="date" data-ko="준비중" data-en="In preparation">준비중</span>
+              <span class="date" data-ko="준비중" data-en="In preparation">In preparation</span>
             </div>
             <p class="meta">CNN/DNN/MOTOR ANALYSIS</p>
             <p class="sub" data-ko="재질 정보를 색상으로 구분한 모터 단면 이미지(CNN)와 운전 조건(DNN)을 결합하여, 기존 수치 기반 모델의 형상 표현 한계를 극복하고 예측 정확도를 획기적으로 높인 하이브리드 딥러닝 모델" data-en="A hybrid deep learning model that fuses color-coded cross-sectional images representing material properties with scalar operating conditions, overcoming the geometric limitations of traditional parameter-based models to achieve superior prediction accuracy.">A hybrid deep learning model that fuses color-coded cross-sectional images representing material properties with scalar operating conditions, overcoming the geometric limitations of traditional parameter-based models to achieve superior prediction accuracy.</p>
@@ -452,7 +450,7 @@
           <div class="item">
             <div class="item-head">
               <b data-ko="Physics-Informed Deep Learning for Rapid Efficiency Map Prediction and Cycle-Oriented Optimization of IPMSM" data-en="Physics-Informed Deep Learning for Rapid Efficiency Map Prediction and Cycle-Oriented Optimization of IPMSM">Physics-Informed Deep Learning for Rapid Efficiency Map Prediction and Cycle-Oriented Optimization of IPMSM</b>
-              <span class="date" data-ko="준비중" data-en="In preparation">준비중</span>
+              <span class="date" data-ko="준비중" data-en="In preparation">In preparation</span>
             </div>
             <p class="meta">EM/EFFMAP/AI</p>
             <p class="sub" data-ko="철손과 동손을 분리하여 효율맵을 고속으로 예측하고, 주행 사이클상의 에너지 소비를 최소화하는 물리 정보 기반 딥러닝 프레임워크를 제안" data-en="I propose a physics-informed deep learning framework that separates iron and copper losses to rapidly predict efficiency maps and minimize energy consumption over driving cycles.">We propose a physics-informed deep learning framework that separates iron and copper losses to rapidly predict efficiency maps and minimize energy consumption over driving cycles.</p>
@@ -460,15 +458,14 @@
         </div>
       </section>
 
-      <!-- EXPERIENCE -->
       <section class="section" id="experience">
-        <h2 data-ko="🔥 경험" data-en="🔥 Experience">🔥 경험</h2>
+        <h2 data-ko="🔥 경험" data-en="🔥 Experience">🔥 Experience</h2>
 
         <div class="card-grid">
           <div class="item">
             <div class="item-head">
               <b data-ko="Quantum Novel Lab · 대학원 인턴" data-en="Quantum Novel Lab · Graduate Intern">
-                Quantum Novel Lab · 대학원 인턴
+                Quantum Novel Lab · Graduate Intern
               </b>
               <span class="date">2023</span>
             </div>
@@ -476,14 +473,14 @@
             <p class="sub"
                data-ko="스핀트로닉스 소자(FeGaTe) 합성 실험 및 전자기적 특성 분석"
                data-en="Synthesized FeGaTe spintronic devices and analyzed electromagnetic properties.">
-              스핀트로닉스 소자(FeGaTe) 합성 실험 및 전자기적 특성 분석
+              Synthesized FeGaTe spintronic devices and analyzed electromagnetic properties.
             </p>
           </div>
 
           <div class="item">
             <div class="item-head">
               <b data-ko="Lab KOPEL · 학부연구생" data-en="Lab KOPEL · Undergraduate Research Intern">
-                Lab KOPEL · 학부연구생
+                Lab KOPEL · Undergraduate Research Intern
               </b>
               <span class="date">2023–2024</span>
             </div>
@@ -491,44 +488,43 @@
             <p class="sub"
                data-ko="건국대학교 전력전자 연구실 학부연구생"
                data-en="Undergraduate researcher in the power electronics lab.">
-              건국대학교 전력전자 연구실 학부연구생
+              Undergraduate researcher in the power electronics lab.
             </p>
           </div>
 
           <div class="item">
             <div class="item-head">
-              <b data-ko="기업 인턴" data-en="Company Internship">기업 인턴</b>
+              <b data-ko="기업 인턴" data-en="Company Internship">Company Internship</b>
               <span class="date">2024</span>
             </div>
             <p class="meta">Enerpowertech</p>
             <p class="sub"
                data-ko="전력전자 회사 인턴 프로그램 수행"
                data-en="Completed an internship program at a power electronics company.">
-              전력전자 회사 인턴 프로그램 수행
+              Completed an internship program at a power electronics company.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Projects -->
       <section class="section section-float" id="projects">
-        <h2 data-ko="📑 프로젝트" data-en="📑 Projects">📑 프로젝트</h2>
+        <h2 data-ko="📑 프로젝트" data-en="📑 Projects">📑 Projects</h2>
 
         <div class="card-grid">
           <div class="item">
             <div class="item-head">
               <b data-ko="스마트 그리드 환경 아래 전기충전기 안전 관련 제도 다각화"
                  data-en="Policy Diversification for EV Charger Safety in Smart Grid Environments">
-                스마트 그리드 환경 아래 전기충전기 안전 관련 제도 다각화
+                Policy Diversification for EV Charger Safety in Smart Grid Environments
               </b>
               <span class="date">2023.05–2023.07</span>
             </div>
             <p class="meta" data-ko="제 2회 전기안전 정책 경진대회" data-en="2nd Electrical Safety Policy Competition">
-              제 2회 전기안전 정책 경진대회
+              2nd Electrical Safety Policy Competition
             </p>
             <p class="sub" data-ko="미래 산업 분석 및 안전 제도 제안 프로젝트"
                data-en="Industry analysis and policy proposal project for future charging safety.">
-              미래 산업 분석 및 안전 제도 제안 프로젝트
+              Industry analysis and policy proposal project for future charging safety.
             </p>
           </div>
 
@@ -536,17 +532,17 @@
             <div class="item-head">
               <b data-ko="청각장애인을 위한 자동차 센서 개발"
                  data-en="Vehicle Sensor Development for the Hearing-Impaired">
-                청각장애인을 위한 자동차 센서 개발
+                Vehicle Sensor Development for the Hearing-Impaired
               </b>
               <span class="date">2023.06–2023.12</span>
             </div>
             <p class="meta" data-ko="23회 창의설계경진대회" data-en="23rd Creative Design Competition">
-              23회 창의설계경진대회
+              23rd Creative Design Competition
             </p>
             <p class="sub"
                data-ko="딥러닝/마이크로프로세서로 졸음운전 판별 및 소리의 시각화 구현"
                data-en="Drowsy-driving detection and sound visualization using deep learning & microprocessor.">
-              딥러닝/마이크로프로세서로 졸음운전 판별 및 소리의 시각화 구현
+              Drowsy-driving detection and sound visualization using deep learning & microprocessor.
             </p>
           </div>
 
@@ -554,16 +550,16 @@
             <div class="item-head">
               <b data-ko="농촌 지역 활성화를 위한 전력소비 예측 모델 개발"
                  data-en="Electricity Demand Forecasting for Revitalizing Rural Areas">
-                농촌 지역 활성화를 위한 전력소비 예측 모델 개발
+                Electricity Demand Forecasting for Revitalizing Rural Areas
               </b>
               <span class="date">2024.05–2024.09</span>
             </div>
             <p class="meta" data-ko="MATLAB AI 경진대회" data-en="MATLAB AI Competition">
-              MATLAB AI 경진대회
+              MATLAB AI Competition
             </p>
             <p class="sub" data-ko="LSTM 기반 농촌지역 전력 소비 예측"
                data-en="LSTM-based power consumption prediction for rural regions.">
-              LSTM 기반 농촌지역 전력 소비 예측
+              LSTM-based power consumption prediction for rural regions.
             </p>
           </div>
 
@@ -571,17 +567,17 @@
             <div class="item-head">
               <b data-ko="컴퓨터 비전을 활용한 스마트 미러 제작"
                  data-en="Smart Mirror using Computer Vision">
-                컴퓨터 비전을 활용한 스마트 미러 제작
+                Smart Mirror using Computer Vision
               </b>
               <span class="date">2024.06–2024.11</span>
             </div>
             <p class="meta" data-ko="경기도 갭이어" data-en="Gyeonggi Gap-Year Program">
-              경기도 갭이어
+              Gyeonggi Gap-Year Program
             </p>
             <p class="sub"
                data-ko="개인 프로젝트 선정(지원금 500만원) · 제작 진행"
                data-en="Selected personal project (KRW 5,000,000 grant) · Development in progress.">
-              개인 프로젝트 선정(지원금 500만원) · 제작 진행
+              Selected personal project (KRW 5,000,000 grant) · Development in progress.
             </p>
           </div>
 
@@ -589,96 +585,94 @@
             <div class="item-head">
               <b data-ko="전완 절단장애인을 위한 운전 보조 기능 탑재 스마트 의수"
                  data-en="Smart Prosthetic Hand with Driving Assistance Functions">
-                전완 절단장애인을 위한 운전 보조 기능 탑재 스마트 의수
+                Smart Prosthetic Hand with Driving Assistance Functions
               </b>
               <span class="date">2024.06–2024.09</span>
             </div>
             <p class="meta" data-ko="24회 창의설계경진대회" data-en="24th Creative Design Competition">
-              24회 창의설계경진대회
+              24th Creative Design Competition
             </p>
             <p class="sub"
                data-ko="기계공학부 동기들과 협업해 의수 제작"
                data-en="Built a prosthetic hand in collaboration with mechanical engineering teammates.">
-              기계공학부 동기들과 협업해 의수 제작
+              Built a prosthetic hand in collaboration with mechanical engineering teammates.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- License -->
       <section class="section section-float" id="license">
-        <h2 data-ko="💻 자격" data-en="💻 License">💻 자격</h2>
+        <h2 data-ko="💻 자격" data-en="💻 License">💻 License</h2>
 
         <div class="card-grid columns-3">
           <div class="item">
             <div class="item-head"><b>OPIC IH</b></div>
-            <p class="meta" data-ko="영어 말하기" data-en="English speaking test">영어 말하기</p>
+            <p class="meta" data-ko="영어 말하기" data-en="English speaking test">English speaking test</p>
           </div>
           <div class="item">
             <div class="item-head"><b>ADSP</b></div>
             <p class="meta" data-ko="데이터 분석 준전문가" data-en="Advanced Data Analytics Semi-Professional">
-              데이터 분석 준전문가
+              Advanced Data Analytics Semi-Professional
             </p>
           </div>
           <div class="item">
             <div class="item-head"><b>TOEIC 815</b></div>
-            <p class="meta" data-ko="영어 시험" data-en="English proficiency test">영어 시험</p>
+            <p class="meta" data-ko="영어 시험" data-en="English proficiency test">English proficiency test</p>
           </div>
         </div>
 
       </section>   
       <section class="section section-float" id="awards">     
-        <h2 data-ko="🏆 수상" data-en="🏆 Awards">🏆 수상</h2>
+        <h2 data-ko="🏆 수상" data-en="🏆 Awards">🏆 Awards</h2>
 
         <div class="card-grid" id="awards">
           <div class="item">
-            <div class="item-head"><b data-ko="전기안전 정책 경진대회" data-en="Electrical Safety Policy Competition">전기안전 정책 경진대회</b><span class="date">2023.07</span></div>
+            <div class="item-head"><b data-ko="전기안전 정책 경진대회" data-en="Electrical Safety Policy Competition">Electrical Safety Policy Competition</b><span class="date">2023.07</span></div>
             <p class="meta" data-ko="최우수상 (산업통상자원부 장관상)" data-en="Grand Prize (Minister of MOTIE Award)">
-              최우수상 (산업통상자원부 장관상)
+              Grand Prize (Minister of MOTIE Award)
             </p>
           </div>
 
           <div class="item">
-            <div class="item-head"><b data-ko="제 15회 창의설계 경진대회" data-en="15th Creative Design Competition">제 15회 창의설계 경진대회</b><span class="date">2023.11</span></div>
+            <div class="item-head"><b data-ko="제 15회 창의설계 경진대회" data-en="15th Creative Design Competition">15th Creative Design Competition</b><span class="date">2023.11</span></div>
             <p class="meta" data-ko="우수상 (건국대학교 총장상)" data-en="Excellence Award (President of Konkuk University Award)">
-              우수상 (건국대학교 총장상)
+              Excellence Award (President of Konkuk University Award)
             </p>
           </div>
 
           <div class="item">
-            <div class="item-head"><b data-ko="한양대학교 컨소시엄 창의적 종합설계 경진대회" data-en="Hanyang University Consortium Capstone Design Competition">한양대학교 컨소시엄 창의적 종합설계 경진대회</b><span class="date">2023.11</span></div>
+            <div class="item-head"><b data-ko="한양대학교 컨소시엄 창의적 종합설계 경진대회" data-en="Hanyang University Consortium Capstone Design Competition">Hanyang University Consortium Capstone Design Competition</b><span class="date">2023.11</span></div>
             <p class="meta" data-ko="장려상 (한양대학교 공학교육혁신센터상)" data-en="Encouragement Award (Hanyang Univ. Engineering Education Innovation Center)">
-              장려상 (한양대학교 공학교육혁신센터상)
+              Encouragement Award (Hanyang Univ. Engineering Education Innovation Center)
             </p>
           </div>
 
           <div class="item">
-            <div class="item-head"><b data-ko="2023 KU SW 경진대회" data-en="2023 KU Software Competition">2023 KU SW 경진대회</b><span class="date">2023.07</span></div>
-            <p class="meta" data-ko="심사위원 특별상" data-en="Special Jury Award">심사위원 특별상</p>
+            <div class="item-head"><b data-ko="2023 KU SW 경진대회" data-en="2023 KU Software Competition">2023 KU Software Competition</b><span class="date">2023.07</span></div>
+            <p class="meta" data-ko="심사위원 특별상" data-en="Special Jury Award">Special Jury Award</p>
           </div>
 
           <div class="item">
-            <div class="item-head"><b data-ko="2024 진로 포트폴리오 대회" data-en="2024 Career Portfolio Competition">2024 진로 포트폴리오 대회</b><span class="date">2024.01</span></div>
-            <p class="meta" data-ko="우수상" data-en="Excellence Award">우수상</p>
+            <div class="item-head"><b data-ko="2024 진로 포트폴리오 대회" data-en="2024 Career Portfolio Competition">2024 Career Portfolio Competition</b><span class="date">2024.01</span></div>
+            <p class="meta" data-ko="우수상" data-en="Excellence Award">Excellence Award</p>
           </div>
 
           <div class="item">
-            <div class="item-head"><b data-ko="건국대학교 러닝앤쉐어링 프로그램" data-en="KU Learning & Sharing Program">건국대학교 러닝앤쉐어링 프로그램</b><span class="date">2025.01</span></div>
-            <p class="meta" data-ko="우수상" data-en="Outstanding Team Award">우수상</p>
+            <div class="item-head"><b data-ko="건국대학교 러닝앤쉐어링 프로그램" data-en="KU Learning & Sharing Program">KU Learning & Sharing Program</b><span class="date">2025.01</span></div>
+            <p class="meta" data-ko="우수상" data-en="Outstanding Team Award">Outstanding Team Award</p>
           </div>
         </div>
       </section>
 
-      <!-- Skills -->
       <section class="section" id="skills">
-        <h2 data-ko="🧰 스킬" data-en="🧰 Skills">🧰 스킬</h2>
+        <h2 data-ko="🧰 스킬" data-en="🧰 Skills">🧰 Skills</h2>
         <small data-ko="툴/언어/기술 역량을 정리했습니다." data-en="Tools, languages, and technical strengths.">
-          툴/언어/기술 역량을 정리했습니다.
+          Tools, languages, and technical strengths.
         </small>
 
         <div class="card-grid">
           <div class="item">
-            <div class="item-head"><b data-ko="프로그래밍" data-en="Programming">프로그래밍</b></div>
+            <div class="item-head"><b data-ko="프로그래밍" data-en="Programming">Programming</b></div>
             <div class="pillrow">
               <span class="pill">Python</span>
               <span class="pill">C</span>
@@ -688,24 +682,23 @@
           </div>
 
           <div class="item">
-            <div class="item-head"><b data-ko="언어" data-en="Languages">언어</b></div>
+            <div class="item-head"><b data-ko="언어" data-en="Languages">Languages</b></div>
             <div class="pillrow">
-              <span class="pill" data-ko="한국어(모국어)" data-en="Korean (Native)">한국어(모국어)</span>
-              <span class="pill" data-ko="영어(OPIC IH / TOEIC 815)" data-en="English (OPIC IH / TOEIC 815)">영어(OPIC IH / TOEIC 815)</span>
-              <span class="pill" data-ko="중국어" data-en="Chinese">중국어</span>
+              <span class="pill" data-ko="한국어(모국어)" data-en="Korean (Native)">Korean (Native)</span>
+              <span class="pill" data-ko="영어(OPIC IH / TOEIC 815)" data-en="English (OPIC IH / TOEIC 815)">English (OPIC IH / TOEIC 815)</span>
+              <span class="pill" data-ko="중국어" data-en="Chinese">Chinese</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- MORE -->
       <section class="section" id="more">
-        <h2 data-ko="🎤 더보기" data-en="🎤 More Of Me">🎤 더보기</h2>
+        <h2 data-ko="🎤 더보기" data-en="🎤 More Of Me">🎤 More Of Me</h2>
 
         <div class="card-grid">
           <div class="item">
             <div class="item-head">
-              <b data-ko="글쓰기" data-en="Writing">글쓰기</b>
+              <b data-ko="글쓰기" data-en="Writing">Writing</b>
               <span class="date">
                 <a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003068232" target="_blank" rel="noopener">
                   link
@@ -715,30 +708,29 @@
             <p class="sub"
                data-ko="&lt;강릉은 모두 작가다&gt; 도서/오마이뉴스에 글을 실었습니다. 다양한 플랫폼에 글을 씁니다."
                data-en="I have published writing on platforms such as OhmyNews and in a book. I enjoy writing across topics.">
-              &lt;강릉은 모두 작가다&gt; 도서/오마이뉴스에 글을 실었습니다. 다양한 플랫폼에 글을 씁니다.
+              I have published writing on platforms such as OhmyNews and in a book. I enjoy writing across topics.
             </p>
           </div>
 
           <div class="item">
-            <div class="item-head"><b data-ko="등산과 자전거" data-en="Hiking & Cycling">등산과 자전거</b></div>
+            <div class="item-head"><b data-ko="등산과 자전거" data-en="Hiking & Cycling">Hiking & Cycling</b></div>
             <p class="sub"
                data-ko="국내 산 등산, 자전거로 마을을 돌아다니는 것을 좋아합니다."
                data-en="I enjoy hiking mountains in Korea and exploring towns by bicycle.">
-              국내 산 등산, 자전거로 마을을 돌아다니는 것을 좋아합니다.
+              I enjoy hiking mountains in Korea and exploring towns by bicycle.
             </p>
           </div>
         </div>
       </section>
 
       <div class="footer">
-        © <span id="y">2026</span> <span data-ko="염정현" data-en="Jeong Hyeon Yeom">염정현</span> · Built with static HTML/CSS
+        © <span id="y">2026</span> <span data-ko="염정현" data-en="Jeong Hyeon Yeom">Jeong Hyeon Yeom</span> · Built with static HTML/CSS
         <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
       </div>
     </section>
   </main>
 
-  <!-- Language toggle script (supports text + HTML + title + persist) -->
-<script>
+  <script>
   (function () {
     const toggleBtn = document.getElementById("langToggle");
     const nodesText = document.querySelectorAll("[data-ko][data-en]");
@@ -756,12 +748,14 @@
       nodesText.forEach(el => { el.textContent = el.dataset[lang]; });
       nodesHtml.forEach(el => { el.innerHTML = el.dataset[lang + "Html"]; });
 
+      // If lang is KO, button should say EN (to switch to English) and vice versa.
       toggleBtn.textContent = (lang === "ko") ? "EN" : "KR";
       localStorage.setItem("siteLang", lang);
     }
 
-    // ✅ init: default EN, but restore user preference
+    // ✅ init: Default to "en" if no saved preference
     const saved = localStorage.getItem("siteLang");
+    // If nothing saved, default to 'en'
     const current = (saved === "ko" || saved === "en") ? saved : "en";
     applyLang(current);
 
