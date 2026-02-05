@@ -15,17 +15,18 @@
         <a href="../cv.html">CV</a>
         <a href="../publications.html">Publications</a>
       </nav>
+      <button id="langToggle" class="lang-btn" type="button" style="margin-left: auto;">KR</button>
     </div>
   </header>
 
   <main class="container grid" id="content">
     <aside class="sidebar">
       <h2 class="side-title" data-ko="프로젝트 상세" data-en="Project Detail">Project Detail</h2>
-      <p class="side-sub">(프로젝트의 짧은 부제나 핵심 분야)</p>
+      <p class="side-sub" data-ko="MATLAB AI 경진대회" data-en="MATLAB AI Competition">MATLAB AI Competition</p>
 
       <div class="side-meta">
-        <div>📅 (진행 기간: 예 2024.06 - 2024.11)</div>
-        <div>📍 (소속/장소: 예 건국대학교)</div>
+        <div>📅 2024.05 - 2024.09</div>
+        <div>📍 Konkuk Univ.</div>
       </div>
 
       <div class="side-actions">
@@ -39,26 +40,27 @@
       </div>
 
       <div class="pillrow">
-        <span class="pill">Tech 1</span>
-        <span class="pill">Tech 2</span>
-        <span class="pill">Tech 3</span>
+        <span class="pill">MATLAB</span>
+        <span class="pill">LSTM</span>
+        <span class="pill">AI</span>
       </div>
     </aside>
 
     <section class="main">
       <section class="banner">
         <div class="banner-body">
-          <h1 style="margin-bottom: 10px;">(프로젝트 풀 네임 적는 곳)</h1>
-          <p class="lead" style="color: var(--muted);">
-            (프로젝트를 한 문장으로 정의하는 리드 문구)
+          <h1 style="margin-bottom: 10px;" data-ko="농촌 지역 활성화를 위한 전력소비 예측 모델 개발" data-en="Electricity Demand Forecasting for Revitalizing Rural Areas">Electricity Demand Forecasting for Revitalizing Rural Areas</h1>
+          <p class="lead" style="color: var(--muted);" data-ko="LSTM 기반 농촌지역 전력 소비 예측" data-en="LSTM-based power consumption prediction for rural regions.">
+            LSTM-based power consumption prediction for rural regions.
           </p>
         </div>
       </section>
 
       <article class="section">
         <h2>📌 프로젝트 개요 (Overview)</h2>
-        <p>
-          (이 프로젝트를 왜 시작하게 되었는지, 어떤 문제를 해결하려고 했는지 적어주세요.)
+        <p data-ko="농촌 지역의 전력 소비 패턴을 분석하고 LSTM 모델을 활용하여 수요를 예측함으로써 에너지 효율을 높이고자 했습니다."
+           data-en="Analyzed power consumption patterns in rural areas and predicted demand using LSTM models to improve energy efficiency.">
+           Analyzed power consumption patterns in rural areas and predicted demand using LSTM models to improve energy efficiency.
         </p>
       </article>
 
@@ -68,9 +70,9 @@
           <img class="media-img" src="./images/project-placeholder.jpg" alt="Project Screenshot" />
           <div class="media-body">
             <ul class="list" style="margin-top: 0;">
-              <li><b>(핵심 기술 1):</b> (상세 설명)</li>
-              <li><b>(핵심 기술 2):</b> (상세 설명)</li>
-              <li><b>(핵심 기술 3):</b> (상세 설명)</li>
+              <li><b>LSTM Model:</b> Time-series forecasting for power consumption.</li>
+              <li><b>MATLAB:</b> Data preprocessing and model training.</li>
+              <li><b>Data Analysis:</b> Analysis of rural power usage patterns.</li>
             </ul>
           </div>
         </div>
@@ -79,8 +81,8 @@
       <article class="section">
         <h2>🏆 결과 및 성과 (Outcomes)</h2>
         <ul class="list">
-          <li>(수상 내역이나 정량적 성과: 예, 기존 대비 속도 20% 향상)</li>
-          <li>(프로젝트를 통해 새롭게 습득한 역량이나 깨달은 점)</li>
+          <li data-ko="MATLAB AI 경진대회 참가" data-en="Participated in MATLAB AI Competition">Participated in MATLAB AI Competition</li>
+          <li data-ko="시계열 데이터 분석 및 딥러닝 모델링 역량 확보" data-en="Acquired skills in time-series data analysis and deep learning modeling">Acquired skills in time-series data analysis and deep learning modeling</li>
         </ul>
       </article>
     </section>
@@ -89,5 +91,29 @@
   <footer class="footer">
     © 2026 염정현 · Built with static HTML/CSS
   </footer>
+
+  <script>
+    (function () {
+      const toggleBtn = document.getElementById("langToggle");
+      const nodesText = document.querySelectorAll("[data-ko][data-en]");
+  
+      function applyLang(lang) {
+        document.documentElement.lang = lang;
+        nodesText.forEach(el => { el.textContent = el.dataset[lang]; });
+        if(toggleBtn) toggleBtn.textContent = (lang === "ko") ? "EN" : "KR";
+        localStorage.setItem("siteLang", lang);
+      }
+  
+      const saved = localStorage.getItem("siteLang") || "en";
+      applyLang(saved);
+  
+      if(toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          const current = localStorage.getItem("siteLang") || "en";
+          applyLang(current === "en" ? "ko" : "en");
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

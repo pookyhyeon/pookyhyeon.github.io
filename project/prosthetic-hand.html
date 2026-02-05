@@ -15,17 +15,18 @@
         <a href="../cv.html">CV</a>
         <a href="../publications.html">Publications</a>
       </nav>
+      <button id="langToggle" class="lang-btn" type="button" style="margin-left: auto;">KR</button>
     </div>
   </header>
 
   <main class="container grid" id="content">
     <aside class="sidebar">
       <h2 class="side-title" data-ko="프로젝트 상세" data-en="Project Detail">Project Detail</h2>
-      <p class="side-sub">(프로젝트의 짧은 부제나 핵심 분야)</p>
+      <p class="side-sub" data-ko="24회 창의설계경진대회" data-en="24th Creative Design Competition">24th Creative Design Competition</p>
 
       <div class="side-meta">
-        <div>📅 (진행 기간: 예 2024.06 - 2024.11)</div>
-        <div>📍 (소속/장소: 예 건국대학교)</div>
+        <div>📅 2024.06 - 2024.09</div>
+        <div>📍 Konkuk Univ.</div>
       </div>
 
       <div class="side-actions">
@@ -39,26 +40,27 @@
       </div>
 
       <div class="pillrow">
-        <span class="pill">Tech 1</span>
-        <span class="pill">Tech 2</span>
-        <span class="pill">Tech 3</span>
+        <span class="pill">Arduino</span>
+        <span class="pill">Sensors</span>
+        <span class="pill">3D Printing</span>
       </div>
     </aside>
 
     <section class="main">
       <section class="banner">
         <div class="banner-body">
-          <h1 style="margin-bottom: 10px;">(프로젝트 풀 네임 적는 곳)</h1>
-          <p class="lead" style="color: var(--muted);">
-            (프로젝트를 한 문장으로 정의하는 리드 문구)
+          <h1 style="margin-bottom: 10px;" data-ko="전완 절단장애인을 위한 운전 보조 기능 탑재 스마트 의수" data-en="Smart Prosthetic Hand with Driving Assistance Functions">Smart Prosthetic Hand with Driving Assistance Functions</h1>
+          <p class="lead" style="color: var(--muted);" data-ko="기계공학부 동기들과 협업해 의수 제작" data-en="Built a prosthetic hand in collaboration with mechanical engineering teammates.">
+            Built a prosthetic hand in collaboration with mechanical engineering teammates.
           </p>
         </div>
       </section>
 
       <article class="section">
         <h2>📌 프로젝트 개요 (Overview)</h2>
-        <p>
-          (이 프로젝트를 왜 시작하게 되었는지, 어떤 문제를 해결하려고 했는지 적어주세요.)
+        <p data-ko="기계공학부 학생들과 협업하여 전완 절단 장애인을 위한 스마트 의수를 제작했습니다. 운전 보조 기능을 탑재하여 실생활에서의 유용성을 높였습니다." 
+           data-en="Collaborated with mechanical engineering students to build a smart prosthetic hand for forearm amputees. Equipped with driving assistance functions to enhance real-life utility.">
+           Collaborated with mechanical engineering students to build a smart prosthetic hand for forearm amputees. Equipped with driving assistance functions to enhance real-life utility.
         </p>
       </article>
 
@@ -68,9 +70,9 @@
           <img class="media-img" src="../images/project-placeholder.jpg" alt="Project Screenshot" />
           <div class="media-body">
             <ul class="list" style="margin-top: 0;">
-              <li><b>(핵심 기술 1):</b> (상세 설명)</li>
-              <li><b>(핵심 기술 2):</b> (상세 설명)</li>
-              <li><b>(핵심 기술 3):</b> (상세 설명)</li>
+              <li><b>Arduino Control:</b> Motor control and signal processing.</li>
+              <li><b>EMG Sensors:</b> Muscle signal detection for hand movements.</li>
+              <li><b>Mechanism Design:</b> 3D printed parts for grip and driving assistance.</li>
             </ul>
           </div>
         </div>
@@ -79,8 +81,8 @@
       <article class="section">
         <h2>🏆 결과 및 성과 (Outcomes)</h2>
         <ul class="list">
-          <li>(수상 내역이나 정량적 성과: 예, 기존 대비 속도 20% 향상)</li>
-          <li>(프로젝트를 통해 새롭게 습득한 역량이나 깨달은 점)</li>
+          <li data-ko="24회 창의설계경진대회 참가 및 시연" data-en="Participated and demonstrated in the 24th Creative Design Competition">Participated and demonstrated in the 24th Creative Design Competition</li>
+          <li data-ko="기계공학부와의 협업을 통해 하드웨어 설계 및 제어 역량 강화" data-en="Enhanced hardware design and control skills through collaboration with mechanical engineering students">Enhanced hardware design and control skills through collaboration with mechanical engineering students</li>
         </ul>
       </article>
     </section>
@@ -89,5 +91,29 @@
   <footer class="footer">
     © 2026 염정현 · Built with static HTML/CSS
   </footer>
+
+  <script>
+    (function () {
+      const toggleBtn = document.getElementById("langToggle");
+      const nodesText = document.querySelectorAll("[data-ko][data-en]");
+  
+      function applyLang(lang) {
+        document.documentElement.lang = lang;
+        nodesText.forEach(el => { el.textContent = el.dataset[lang]; });
+        if(toggleBtn) toggleBtn.textContent = (lang === "ko") ? "EN" : "KR";
+        localStorage.setItem("siteLang", lang);
+      }
+  
+      const saved = localStorage.getItem("siteLang") || "en";
+      applyLang(saved);
+  
+      if(toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          const current = localStorage.getItem("siteLang") || "en";
+          applyLang(current === "en" ? "ko" : "en");
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
