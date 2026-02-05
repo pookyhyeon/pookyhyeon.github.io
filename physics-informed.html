@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1200, initial-scale=1" />
+  <title>Research Details | 염정현</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">Sine wave</a>
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+      </nav>
+      <button id="langToggle" class="lang-btn" type="button" style="margin-left: auto;">KR</button>
+    </div>
+  </header>
+
+  <main class="container grid" id="content">
+    <aside class="sidebar">
+      <h2 class="side-title" data-ko="연구 상세" data-en="Research Detail">Research Detail</h2>
+      <p class="side-sub" data-ko="개인 연구 (Manuscript)" data-en="Personal Research (Manuscript)">Personal Research (Manuscript)</p>
+
+      <div class="side-meta">
+        <div>Ongoing</div>
+        <div>📍 CAU, KR</div>
+      </div>
+
+      <div class="side-actions">
+        <a href="https://github.com/pookyhyeon" class="btn" target="_blank">
+          GitHub <span class="icon" aria-hidden="true">↗</span>
+        </a>
+        <a href="../index.html#manuscripts" style="text-align:right; font-size:13px; color:var(--muted); text-decoration:none;">
+          <span data-ko="목록으로" data-en="Back to List">Back to List</span> →
+        </a>
+      </div>
+
+      <div class="pillrow">
+        <span class="pill">Physics-Informed</span>
+        <span class="pill">Efficiency Map</span>
+        <span class="pill">AI</span>
+      </div>
+    </aside>
+
+    <section class="main">
+      <section class="banner">
+        <div class="banner-hero" style="background-image:url('../images/ocean.jpg');">
+          <div class="banner-title">Sine wave</div>
+        </div>
+        <div class="banner-body" style="text-align:center;">
+          <h1 style="margin-bottom: 10px; font-size: 24px;" data-ko="IPMSM의 고속 효율맵 예측 및 주행 사이클 기반 최적화를 위한 물리 정보 기반 딥러닝" data-en="Physics-Informed Deep Learning for Rapid Efficiency Map Prediction and Cycle-Oriented Optimization of IPMSM">Physics-Informed Deep Learning for Rapid Efficiency Map Prediction and Cycle-Oriented Optimization of IPMSM</h1>
+          <p class="lead" style="color: var(--muted);" data-ko="물리 법칙을 학습하여 효율맵을 고속으로 예측하고 에너지 소비를 최소화" data-en="Rapidly predicting efficiency maps and minimizing energy consumption by learning physical laws.">
+            Rapidly predicting efficiency maps and minimizing energy consumption by learning physical laws.
+          </p>
+        </div>
+      </section>
+
+      <article class="section">
+        <h2>📌 연구 개요 (Overview)</h2>
+        <p data-ko="철손과 동손을 분리하여 효율맵을 고속으로 예측하고, 주행 사이클상의 에너지 소비를 최소화하는 물리 정보 기반 딥러닝(Physics-Informed Deep Learning) 프레임워크를 제안합니다. 순수 데이터 기반 모델보다 물리적 정합성이 높고 예측 속도가 빠릅니다."
+           data-en="We propose a physics-informed deep learning framework that separates iron and copper losses to rapidly predict efficiency maps and minimize energy consumption over driving cycles. It offers higher physical consistency and faster prediction speeds than purely data-driven models.">
+           We propose a physics-informed deep learning framework that separates iron and copper losses to rapidly predict efficiency maps and minimize energy consumption over driving cycles. It offers higher physical consistency and faster prediction speeds than purely data-driven models.
+        </p>
+      </article>
+
+      <article class="section">
+        <h2>🧑‍💻 연구 내용 (Research Details)</h2>
+        <ul class="list">
+          <li data-ko="손실 성분(철손, 동손) 분리 모델링을 통한 물리적 지식 반영" data-en="Incorporating physical knowledge through separate modeling of loss components (iron loss, copper loss)">Incorporating physical knowledge through separate modeling of loss components (iron loss, copper loss)</li>
+          <li data-ko="전체 운전 영역(효율맵)에 대한 고속 예측 알고리즘 구현" data-en="Implementation of rapid prediction algorithms for the entire operating region (efficiency map)">Implementation of rapid prediction algorithms for the entire operating region (efficiency map)</li>
+          <li data-ko="주행 사이클(Driving Cycle) 시뮬레이션 연동 및 에너지 소비량 최적화" data-en="Integration with driving cycle simulation and optimization of energy consumption">Integration with driving cycle simulation and optimization of energy consumption</li>
+        </ul>
+      </article>
+
+      <article class="section">
+        <h2>🛠️ 주요 기술 (Technical Features)</h2>
+        <ul class="list">
+          <li><b>Physics-Informed AI:</b> Embedding physical laws into the loss function.</li>
+          <li><b>Efficiency Map:</b> Rapid generation of motor efficiency contours.</li>
+          <li><b>Cycle Optimization:</b> Minimizing total energy over specific driving cycles.</li>
+        </ul>
+      </article>
+
+      <article class="section">
+        <h2>📸 진행 과정 (Process)</h2>
+        <div class="card-grid columns-2">
+           <div class="item" style="text-align:center; padding:40px; color:var(--muted); grid-column: 1 / -1;">
+             <p data-ko="연구 관련 이미지가 준비 중입니다." data-en="Research images coming soon.">Research images coming soon.</p>
+           </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 염정현 · Built with static HTML/CSS
+  </footer>
+
+  <script>
+    (function () {
+      const toggleBtn = document.getElementById("langToggle");
+      const nodesText = document.querySelectorAll("[data-ko][data-en]");
+      function applyLang(lang) {
+        document.documentElement.lang = lang;
+        nodesText.forEach(el => { el.textContent = el.dataset[lang]; });
+        if(toggleBtn) toggleBtn.textContent = (lang === "ko") ? "EN" : "KR";
+        localStorage.setItem("siteLang", lang);
+      }
+      const saved = localStorage.getItem("siteLang") || "en";
+      applyLang(saved);
+      if(toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          const current = localStorage.getItem("siteLang") || "en";
+          applyLang(current === "en" ? "ko" : "en");
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
