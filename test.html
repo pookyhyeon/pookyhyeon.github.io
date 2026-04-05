@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeong Hyeon Yeom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./test-style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="./test.html">Jeong Hyeon Yeom</a>
+      <nav>
+        <a href="./test.html" class="active" data-ko="홈" data-en="Home">Home</a>
+        <a href="./test-about.html" data-ko="소개" data-en="About">About</a>
+        <a href="./test-research.html" data-ko="연구" data-en="Research">Research</a>
+        <a href="./test-projects.html" data-ko="프로젝트" data-en="Projects">Projects</a>
+      </nav>
+      <div class="header-end">
+        <button class="icon-btn" id="langBtn">KR</button>
+        <button class="icon-btn" id="themeBtn">☀︎</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <!-- TOC -->
+    <aside class="toc">
+      <div class="toc-label">On this page</div>
+      <a href="#about" class="toc-link">About</a>
+      <a href="#news" class="toc-link">News</a>
+    </aside>
+
+    <main class="main-content">
+
+      <!-- Hero -->
+      <section class="hero" id="about">
+        <div class="hero-top">
+          <img class="avatar" src="./images/about.jpg" alt="Jeong Hyeon Yeom" />
+          <div>
+            <div class="hero-name" data-ko="염정현" data-en="Jeong Hyeon Yeom">Jeong Hyeon Yeom</div>
+            <div class="hero-role"
+              data-ko="M.S. Student · 전동기 설계 · 중앙대학교"
+              data-en="M.S. Student · Electric Motor Design · Chung-Ang University">
+              M.S. Student · Electric Motor Design · Chung-Ang University
+            </div>
+            <div class="hero-links">
+              <a class="badge" href="https://github.com/pookyhyeon" target="_blank" rel="noopener">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                GitHub
+              </a>
+              <a class="badge" href="./images/%EC%97%BC%EC%A0%95%ED%98%84%20CV.pdf" target="_blank" rel="noopener">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+                CV
+              </a>
+              <button class="badge" id="emailBtn" data-email="pkyhyeon99@gmail.com">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                pkyhyeon99@gmail.com
+              </button>
+              <span class="badge">📍 Seoul, KR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-bio">
+          <p data-ko="중앙대학교에서 전동기 설계를 연구하는 석사과정 학생입니다."
+             data-en="I am an M.S. student at Chung-Ang University, specializing in electric machine design.">
+            I am an M.S. student at Chung-Ang University, specializing in electric machine design.
+          </p>
+          <p data-ko="건국대학교 전기전자공학부에서 학사 학위를 취득했습니다."
+             data-en="I received my B.S. degree in Electrical &amp; Electronic Engineering from Konkuk University.">
+            I received my B.S. degree in Electrical &amp; Electronic Engineering from Konkuk University.
+          </p>
+          <p data-ko="전동기 설계와 제어, 임베디드 시스템, 멀티피직스 시뮬레이션에 깊은 관심을 가지고 있으며, AI·딥러닝을 활용한 전동기 시스템 최적화 연구에 집중하고 있습니다."
+             data-en="My research interests lie in electric motor design &amp; control, embedded systems, and multi-physics simulation — with a focus on optimizing motor systems using AI and deep learning.">
+            My research interests lie in electric motor design &amp; control, embedded systems, and multi-physics simulation — with a focus on optimizing motor systems using AI and deep learning.
+          </p>
+        </div>
+
+        <div class="hero-quote"
+          data-ko-html='행운은 <b style="color:var(--accent)">결단과 실행력</b>을 가진 용기 있는 자를 선호한다.'
+          data-en-html='Luck favors the brave who have <b style="color:var(--accent)">the courage to decide and act</b>.'>
+          Luck favors the brave who have <b style="color:var(--accent)">the courage to decide and act</b>.
+        </div>
+
+        <div class="tags">
+          <span class="tag">Motor Design</span>
+          <span class="tag">AI / Deep Learning</span>
+          <span class="tag">Embedded Systems</span>
+          <span class="tag">Multiphysics Simulation</span>
+          <span class="tag">Power Electronics</span>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section id="news">
+        <h2 class="section-title">📰 <span data-ko="최근 소식" data-en="News">News</span></h2>
+        <div class="news-list">
+
+          <div class="news-item">
+            <span class="news-icon">🎉</span>
+            <span class="news-date">2025.03</span>
+            <span class="news-text"
+              data-ko-html="중앙대학교 지능형 에너지 산업학과 석사과정 입학 — <b>모터설계 연구실</b>에서 연구를 시작했습니다."
+              data-en-html="Enrolled in M.S. program at Chung-Ang University — started research at the <b>Electric Motor Design Lab</b>.">
+              Enrolled in M.S. program at Chung-Ang University — started research at the <b>Electric Motor Design Lab</b>.
+            </span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-icon">🏆</span>
+            <span class="news-date">2025.01</span>
+            <span class="news-text"
+              data-ko-html="건국대학교 <b>러닝앤쉐어링 프로그램</b> 우수상 수상"
+              data-en-html="Received <b>Outstanding Team Award</b> at KU Learning &amp; Sharing Program.">
+              Received <b>Outstanding Team Award</b> at KU Learning &amp; Sharing Program.
+            </span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-icon">🤖</span>
+            <span class="news-date">2025</span>
+            <span class="news-text"
+              data-ko-html="<b>LG</b> 과제 참여 — 700RT 대형 칠러용 Sleeve-free IPM 모터 토폴로지 발굴 연구 시작"
+              data-en-html="Joined <b>LG</b> research project — topology exploration for 700RT large chiller sleeve-free IPM motors.">
+              Joined <b>LG</b> research project — topology exploration for 700RT large chiller sleeve-free IPM motors.
+            </span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-icon">📊</span>
+            <span class="news-date">2025</span>
+            <span class="news-text"
+              data-ko-html="<b>POSCO</b> 과제 참여 — 타발 응력 해소 정도에 따른 구동모터 효율 예측 연구"
+              data-en-html="Joined <b>POSCO</b> research project — efficiency prediction of traction motors based on punching stress relaxation levels.">
+              Joined <b>POSCO</b> research project — efficiency prediction of traction motors based on punching stress relaxation levels.
+            </span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-icon">💰</span>
+            <span class="news-date">2024</span>
+            <span class="news-text"
+              data-ko-html="<b>경기도 갭이어</b> 개인 프로젝트 선정 — 지원금 500만원으로 스마트 미러 제작"
+              data-en-html="Selected for <b>Gyeonggi Gap-Year</b> personal project — received KRW 5M grant to develop a smart mirror.">
+              Selected for <b>Gyeonggi Gap-Year</b> personal project — received KRW 5M grant to develop a smart mirror.
+            </span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-icon">🥇</span>
+            <span class="news-date">2023.07</span>
+            <span class="news-text"
+              data-ko-html="<b>전기안전 정책 경진대회</b> 최우수상 수상 (산업통상자원부 장관상)"
+              data-en-html="Received <b>Grand Prize (Minister Award)</b> at 2nd Electrical Safety Policy Competition.">
+              Received <b>Grand Prize (Minister Award)</b> at 2nd Electrical Safety Policy Competition.
+            </span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-icon">🏆</span>
+            <span class="news-date">2024.01</span>
+            <span class="news-text"
+              data-ko-html="<b>2024 진로 포트폴리오 대회</b> 우수상 수상"
+              data-en-html="Received <b>Excellence Award</b> at 2024 Career Portfolio Competition.">
+              Received <b>Excellence Award</b> at 2024 Career Portfolio Competition.
+            </span>
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <div>© <span id="year"></span> Jeong Hyeon Yeom</div>
+        <div class="footer-links">
+          <a href="https://github.com/pookyhyeon" target="_blank" rel="noopener">GitHub</a>
+          <a href="./images/%EC%97%BC%EC%A0%95%ED%98%84%20CV.pdf" target="_blank" rel="noopener">CV</a>
+          <a href="mailto:pkyhyeon99@gmail.com">Email</a>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="./test-common.js"></script>
+</body>
+</html>

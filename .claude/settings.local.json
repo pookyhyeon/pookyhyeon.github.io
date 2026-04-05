@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pshlego.github.io)",
+      "WebFetch(domain:jonbarron.info)",
+      "WebFetch(domain:karpathy.github.io)",
+      "WebFetch(domain:wzliu.com)"
+    ]
+  }
+}
