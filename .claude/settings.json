@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.sitebuilderreport.com)",
+      "WebFetch(domain:thanhvtran.com)",
+      "WebFetch(domain:shahriar2203041.github.io)",
+      "WebFetch(domain:mattwatson30.github.io)",
+      "WebFetch(domain:theacademicdesigner.com)",
+      "WebFetch(domain:www.founderjar.com)",
+      "WebFetch(domain:darpanjain.com)",
+      "WebFetch(domain:acamedia.uk)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.neelnanda.io)",
+      "WebFetch(domain:arkamahajan.in)",
+      "WebFetch(domain:bjornmelin.io)"
+    ]
+  }
+}

@@ -4,7 +4,14 @@
       "WebFetch(domain:pshlego.github.io)",
       "WebFetch(domain:jonbarron.info)",
       "WebFetch(domain:karpathy.github.io)",
-      "WebFetch(domain:wzliu.com)"
+      "WebFetch(domain:wzliu.com)",
+      "WebSearch",
+      "WebFetch(domain:taekyunl.github.io)",
+      "WebFetch(domain:kim-junseong.github.io)",
+      "WebFetch(domain:wangqinsi1.github.io)",
+      "WebFetch(domain:jd730.github.io)",
+      "WebFetch(domain:donghwanjang.github.io)",
+      "WebFetch(domain:jitengmu.github.io)"
     ]
   }
 }
