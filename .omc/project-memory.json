@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1776069823878,
+  "projectRoot": "c:\\Users\\FEMCAL1\\Documents\\GitHub\\homepagejeonghyeon",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "images": {
+      "path": "images",
+      "purpose": null,
+      "fileCount": 36,
+      "lastAccessed": 1776069823790,
+      "keyFiles": [
+        "2023 제 15회 창의설계 경진대회.jpeg",
+        "2023 한양대 컨소시엄 창의적 종합설계 경진대회.jpeg",
+        "about.jpg",
+        "ai.png",
+        "ai2.png"
+      ]
+    },
+    "project": {
+      "path": "project",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1776069823791,
+      "keyFiles": [
+        "hearing-aid.html",
+        "power-forecast.html",
+        "prosthetic-hand.html",
+        "smart-mirror.html",
+        "smartgid.html"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "index.html",
+      "accessCount": 25,
+      "lastAccessed": 1776070939613,
+      "type": "file"
+    },
+    {
+      "path": "style.css",
+      "accessCount": 17,
+      "lastAccessed": 1776072005078,
+      "type": "directory"
+    },
+    {
+      "path": "",
+      "accessCount": 1,
+      "lastAccessed": 1776070232898,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}

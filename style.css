@@ -178,6 +178,14 @@ a:hover{ text-decoration:underline; }
   color:var(--muted);
   font-size:13px;
 }
+.side-meta-label{
+  font-size:10px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  color:var(--accent);
+  margin-right:4px;
+}
 .side-actions{
   margin-top:16px;
   display:grid;
@@ -535,6 +543,11 @@ a:hover{ text-decoration:underline; }
   vertical-align:middle;
   white-space:nowrap;
 }
+.role-badge.past{
+  border:1px solid #d1d5db;
+  background:#f3f4f6;
+  color:#6b7280;
+}
 .more-index{
   padding:20px;
   border:1px solid var(--line);
@@ -598,9 +611,15 @@ a:hover{ text-decoration:underline; }
     position:relative;
     top:auto;
     max-height:none;
+    max-width:480px;
+    margin-left:auto;
+    margin-right:auto;
   }
+  .side-meta{ text-align:center; }
+  .side-actions{ justify-content:center; }
+  .pillrow{ justify-content:center; }
   .card-grid.columns-3{
-    grid-template-columns:1fr;
+    grid-template-columns:repeat(2, minmax(0,1fr));
   }
 }
 
@@ -634,4 +653,25 @@ a:hover{ text-decoration:underline; }
   .media-row{
     grid-template-columns:1fr;
   }
+  .card-grid.columns-3{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width: 480px){
+  .sidebar{
+    max-width:100%;
+    padding:16px;
+  }
+  .banner-hero{
+    min-height:160px;
+    padding:18px;
+  }
+  .banner-title{ font-size:26px; }
+  .nav a{
+    padding:6px 7px;
+    font-size:11px;
+  }
+  .item{ padding:14px; }
+  .role-badge{ font-size:10px; padding:2px 7px; }
 }

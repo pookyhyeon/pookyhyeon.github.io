@@ -1,0 +1,7 @@
+{
+  "tool_name": "WebFetch",
+  "tool_input_preview": "{\"url\":\"https://rauchg.com\",\"prompt\":\"Extract the exact text of the hero/intro section: name, role, bio paragraph, tagline, any short description. Copy the text verbatim.\"}",
+  "error": "Request failed with status code 429",
+  "timestamp": "2026-04-13T09:18:13.357Z",
+  "retry_count": 1
+}
