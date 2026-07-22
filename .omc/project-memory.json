@@ -62,9 +62,15 @@
   "hotPaths": [
     {
       "path": "index.html",
-      "accessCount": 6,
-      "lastAccessed": 1784703784035,
+      "accessCount": 32,
+      "lastAccessed": 1784707458274,
       "type": "directory"
+    },
+    {
+      "path": "style.css",
+      "accessCount": 5,
+      "lastAccessed": 1784704927676,
+      "type": "file"
     },
     {
       "path": "test-about.html",
@@ -77,6 +83,12 @@
       "accessCount": 1,
       "lastAccessed": 1784703770473,
       "type": "directory"
+    },
+    {
+      "path": "images\\KakaoTalk_20260722_163827724.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1784707739684,
+      "type": "file"
     }
   ],
   "userDirectives": []
