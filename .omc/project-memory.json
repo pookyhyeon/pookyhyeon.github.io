@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1784703693320,
+  "lastScanned": 1785221210842,
   "projectRoot": "c:\\Users\\FEMCAL1\\Documents\\GitHub\\homepagejeonghyeon",
   "techStack": {
     "languages": [],
@@ -35,8 +35,8 @@
     "images": {
       "path": "images",
       "purpose": null,
-      "fileCount": 36,
-      "lastAccessed": 1784703692958,
+      "fileCount": 38,
+      "lastAccessed": 1785221210784,
       "keyFiles": [
         "2023 제 15회 창의설계 경진대회.jpeg",
         "2023 한양대 컨소시엄 창의적 종합설계 경진대회.jpeg",
@@ -49,7 +49,7 @@
       "path": "project",
       "purpose": null,
       "fileCount": 6,
-      "lastAccessed": 1784703692959,
+      "lastAccessed": 1785221210786,
       "keyFiles": [
         "hearing-aid.html",
         "power-forecast.html",
@@ -62,33 +62,21 @@
   "hotPaths": [
     {
       "path": "index.html",
-      "accessCount": 32,
-      "lastAccessed": 1784707458274,
+      "accessCount": 4,
+      "lastAccessed": 1785221379672,
       "type": "directory"
     },
     {
-      "path": "style.css",
-      "accessCount": 5,
-      "lastAccessed": 1784704927676,
-      "type": "file"
-    },
-    {
-      "path": "test-about.html",
-      "accessCount": 1,
-      "lastAccessed": 1784703765591,
+      "path": ".",
+      "accessCount": 2,
+      "lastAccessed": 1785221391834,
       "type": "directory"
     },
     {
-      "path": "physics-informed.html",
+      "path": "test.html",
       "accessCount": 1,
-      "lastAccessed": 1784703770473,
+      "lastAccessed": 1785221373415,
       "type": "directory"
-    },
-    {
-      "path": "images\\KakaoTalk_20260722_163827724.jpg",
-      "accessCount": 1,
-      "lastAccessed": 1784707739684,
-      "type": "file"
     }
   ],
   "userDirectives": []
