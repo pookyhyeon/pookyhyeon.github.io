@@ -185,6 +185,18 @@ section { margin-bottom: 56px; }
   font-size: 14px; padding: 11px 0;
   border-bottom: 1px solid var(--border);
 }
+<<<<<<< Updated upstream
+=======
+.news-marker {
+  width: 8px;
+  height: 8px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.65;
+  flex-shrink: 0;
+}
+>>>>>>> Stashed changes
 .news-date {
   font-size: 12px; color: var(--fg2); white-space: nowrap;
   font-family: 'Roboto Mono', monospace; flex-shrink: 0; min-width: 58px;
