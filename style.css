@@ -36,7 +36,7 @@ html[data-theme="dark"] body{
 }
 html[data-theme="dark"] .sidebar{ background:rgba(20,28,27,.88); }
 html[data-theme="dark"] .item{ background:rgba(20,28,27,.9); }
-html[data-theme="dark"] .topbar{ background:rgba(11,18,17,.82); }
+html[data-theme="dark"] .topbar{ background:rgba(11,18,17,1); }
 html[data-theme="dark"] .more-index{ background:rgba(20,28,27,.76); }
 html[data-theme="dark"] .btn{ background:var(--surface); }
 html[data-theme="dark"] .subtab-btn{ background:var(--surface); }
@@ -84,7 +84,7 @@ a:hover{ text-decoration:underline; }
   top:0;
   z-index:50;
   border-bottom:1px solid rgba(223,230,227,.88);
-  background:rgba(246,248,247,.82);
+  background:rgba(246,248,247,1);
   backdrop-filter:blur(18px);
 }
 .topbar-inner{
