@@ -152,6 +152,14 @@
             </span>
           </div>
           <div class="news-item">
+            <span class="news-date">2025.09</span>
+            <span class="news-text"
+                  data-ko="POSCO 코어 타발 응력해소 정도에 따른 구동모터 효율 예측 기술 개발 과제 완료"
+                  data-en="Completed POSCO core-punching stress relaxation EV motor efficiency prediction project">
+              Completed POSCO core-punching stress relaxation EV motor efficiency prediction project
+            </span>
+          </div>
+          <div class="news-item">
             <span class="news-date">2025.03</span>
             <span class="news-text"
                   data-ko="LG전자 700RT 대형 칠러용 Sleeve-free IPM 모터 Topology 발굴 과제 참여"
@@ -254,6 +262,10 @@
                   <li data-ko="(조교) 임베디드 시스템 실습 조교 (2026)"
                       data-en="(TA) Embedded Systems Lab Teaching Assistant (2026)">
                     (TA) Embedded Systems Lab Teaching Assistant (2026)
+                  </li>
+                  <li data-ko="(학위논문) 전기강판 두께와 타발 열화·회복에 따른 EV 구동 전동기 손실 특성 (2027.02 예정)"
+                      data-en="(Thesis) EV Traction Motor Loss Characteristics by Electrical Steel Thickness and Punching Degradation/Recovery (Expected 2027.02)">
+                    (Thesis) EV Traction Motor Loss Characteristics by Electrical Steel Thickness and Punching Degradation/Recovery (Expected 2027.02)
                   </li>
                 </ul>
               </div>
@@ -709,6 +721,48 @@
         </div>
 
         <div class="tab-panel" data-panel="skills">
+      <section class="section" id="competency">
+        <h2 data-ko="핵심 역량" data-en="Core Competencies">Core Competencies</h2>
+        <small data-ko="전동기 설계 직무에서 보유한 역량을 네 가지로 정리했습니다." data-en="Four core competencies for motor design roles.">
+          Four core competencies for motor design roles.
+        </small>
+
+        <div class="card-grid columns-2">
+          <div class="item">
+            <div class="item-head"><b data-ko="구동모터 설계" data-en="Motor Design">Motor Design</b></div>
+            <ul>
+              <li data-ko="요구사양 만족 → 극/슬롯 · 권선 설계" data-en="Meeting requirements → pole/slot and winding design">Meeting requirements → pole/slot and winding design</li>
+              <li data-ko="다목적 최적설계로 극수 결정" data-en="Pole-count decisions via multi-objective optimization">Pole-count decisions via multi-objective optimization</li>
+              <li data-ko="전자계 · 구조 · 감자 동시 검토" data-en="Concurrent electromagnetic, structural, and demagnetization review">Concurrent electromagnetic, structural, and demagnetization review</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="item-head"><b data-ko="멀티피직스 해석" data-en="Multiphysics Analysis">Multiphysics Analysis</b></div>
+            <ul>
+              <li data-ko="구조해석 — 고속 회전자 응력 · 변형" data-en="Structural — high-speed rotor stress and deformation">Structural — high-speed rotor stress and deformation</li>
+              <li data-ko="열해석 — Motor-CAD 온도 분포" data-en="Thermal — temperature distribution via Motor-CAD">Thermal — temperature distribution via Motor-CAD</li>
+              <li data-ko="전자기력 기반 진동 · 소음(NVH) 분석" data-en="Electromagnetic-force-based vibration/noise (NVH) analysis">Electromagnetic-force-based vibration/noise (NVH) analysis</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="item-head"><b data-ko="공정 반영 해석 · 시험 (POSCO)" data-en="Manufacturing-Aware Analysis &amp; Test (POSCO)">Manufacturing-Aware Analysis &amp; Test (POSCO)</b></div>
+            <ul>
+              <li data-ko="EV 구동모터 타발 열화 반영 효율 예측" data-en="Efficiency prediction reflecting punching-process degradation">Efficiency prediction reflecting punching-process degradation</li>
+              <li data-ko="열처리 3종 시제품 설계 · 제작" data-en="Design and build of 3 heat-treatment prototype variants">Design and build of 3 heat-treatment prototype variants</li>
+              <li data-ko="토크 · 상전압 · 효율 실측 정합성 검증" data-en="Validated torque, phase-voltage, and efficiency against measurement">Validated torque, phase-voltage, and efficiency against measurement</li>
+            </ul>
+          </div>
+          <div class="item">
+            <div class="item-head"><b data-ko="코딩 · 자동화 (Python)" data-en="Coding &amp; Automation (Python)">Coding &amp; Automation (Python)</b></div>
+            <ul>
+              <li data-ko="Motor-CAD–optiSLang 연동 구축" data-en="Built Motor-CAD–optiSLang integration">Built Motor-CAD–optiSLang integration</li>
+              <li data-ko="PyAEDT 병렬 해석 · 샘플링 자동화" data-en="PyAEDT parallel analysis and sampling automation">PyAEDT parallel analysis and sampling automation</li>
+              <li data-ko="물리 제약 DNN 효율맵 대리모델 · GUI 개발" data-en="Physics-constrained DNN surrogate model and GUI for efficiency maps">Physics-constrained DNN surrogate model and GUI for efficiency maps</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="skills">
         <h2 data-ko="스킬" data-en="Skills">Skills</h2>
         <small data-ko="툴/언어/기술 역량을 정리했습니다." data-en="Tools, languages, and technical strengths.">
@@ -856,10 +910,10 @@
       });
     }
 
-    // ✅ init: Default to "en" if no saved preference
+    // ✅ init: Default to "ko" if no saved preference
     const saved = localStorage.getItem("siteLang");
-    // If nothing saved, default to 'en'
-    const current = (saved === "ko" || saved === "en") ? saved : "en";
+    // If nothing saved, default to 'ko'
+    const current = (saved === "ko" || saved === "en") ? saved : "ko";
     applyLang(current);
 
     toggleBtn.addEventListener("click", () => {
