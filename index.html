@@ -15,6 +15,28 @@
 <body>
   <a class="skip-link" href="#content" data-ko="본문으로 바로가기" data-en="Skip to content">Skip to content</a>
 
+  <div class="splash" id="splash">
+    <img class="splash-img" src="./images/motor-intro.png" alt="" aria-hidden="true" />
+    <div class="splash-overlay"></div>
+    <div class="splash-content">
+      <p class="splash-eyebrow" data-ko="PORTFOLIO" data-en="PORTFOLIO">PORTFOLIO</p>
+      <h1 class="splash-line"
+          data-ko-html='협력이라는 <b>바퀴</b>와<br>도전이라는 <b>모터</b>로,<br>끝까지 달리는 지원자<br>염정현입니다'
+          data-en-html='With collaboration as my <b>wheel</b><br>and challenge as my <b>motor</b>,<br>I keep running to the finish —<br>I am Jeong Hyeon Yeom'>
+        협력이라는 <b>바퀴</b>와<br>도전이라는 <b>모터</b>로,<br>끝까지 달리는 지원자<br>염정현입니다
+      </h1>
+      <p class="splash-sub"
+         data-ko="구동모터부터 로봇·칠러용 모터까지, 다양한 토폴로지의 전동기를 설계합니다."
+         data-en="From traction motors to motors for robots and chillers — I design across a wide range of motor topologies.">
+        구동모터부터 로봇·칠러용 모터까지, 다양한 토폴로지의 전동기를 설계합니다.
+      </p>
+      <button type="button" class="splash-enter" id="splashEnter">
+        <span data-ko="포트폴리오 보기" data-en="View Portfolio">View Portfolio</span>
+        <span aria-hidden="true">↓</span>
+      </button>
+    </div>
+  </div>
+
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="./index.html">Sine wave</a>
@@ -1041,6 +1063,36 @@
         );
       }
     }
+  })();
+</script>
+
+<script>
+  (function () {
+    const splash = document.getElementById("splash");
+    if (!splash) return;
+
+    let seen = false;
+    try { seen = sessionStorage.getItem("splashSeen") === "1"; } catch (e) {}
+    if (seen) { splash.remove(); return; }
+
+    document.documentElement.classList.add("splash-lock");
+    let dismissed = false;
+    function dismissSplash() {
+      if (dismissed) return;
+      dismissed = true;
+      splash.classList.add("is-leaving");
+      try { sessionStorage.setItem("splashSeen", "1"); } catch (e) {}
+      document.documentElement.classList.remove("splash-lock");
+      setTimeout(() => splash.remove(), 650);
+    }
+    splash.addEventListener("click", dismissSplash);
+    document.getElementById("splashEnter").addEventListener("click", (e) => {
+      e.stopPropagation();
+      dismissSplash();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") dismissSplash();
+    });
   })();
 </script>
 
